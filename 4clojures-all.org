@@ -17,21 +17,15 @@ Solutions:
 true
 0x89's solution:
 true
+
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
 (not false)
-------------------------------------------------------------------------------------------------
-darren's solution:
-true
+
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
 (reify Object (equals [_ _] (= _)))
-------------------------------------------------------------------------------------------------
-wills's solution:
-true
-------------------------------------------------------------------------------------------------
-foantell's solution:
-true
+
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
 (= (clojure-version) "1.4.0")
@@ -46,20 +40,21 @@ ctzsm's solution:
 Solutions:
 
 4
-0x89's solution:
-4
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
 (- 10 (* 2 3))
-------------------------------------------------------------------------------------------------
-darren's solution:
-4
+
 
 * ;; 4Clojure Question 3
+
+#+BEGIN_SRC clojure
+
+
 ;; Clojure strings are Java strings. This means that you can use any
 ;; of the Java string methods on Clojure strings. 
 
 (= __ (.toUpperCase "hello world"))
+#+END_SRC
 
 ** solutions
 
@@ -79,45 +74,54 @@ lllllllllllll's solution:
 ------------------------------------------------------------------------------------------------
 
 * ;; 4Clojure Question 4
+
+#+BEGIN_SRC clojure
+
+
 ;; Lists can be constructed with either a function or a quoted form.
 ;; Use M-x 4clojure-check-answers when you're done!
 
 (= (list __) '(:a :b :c))
+#+END_SRC
 
 ** solutions
 
 Solutions:
 
 :a :b :c
-0x89's solution:
-:a :b :c
-------------------------------------------------------------------------------------------------
-_pcl's solution:
-:a :b :c
-------------------------------------------------------------------------------------------------
+
 
 * ;; 4Clojure Question 5
+
+#+BEGIN_SRC clojure
+
+
 ;; When operating on a list, the conj function will return a new list
 ;; with one or more items "added" to the front. 
 
 (= __ (conj '(2 3 4) 1))
 
 (= __ (conj '(3 4) 2 1))
+#+END_SRC
 
 ** solutions
-
-
 
 Solutions:
 
 '(1 2 3 4)
 0x89's solution:
 [1 2 3 4]
+
 * ;; 4Clojure Question 6
+
+#+BEGIN_SRC clojure
+
+
 ;; Vectors can be constructed several ways. You can compare them with
 ;; lists. Use M-x 4clojure-check-answers when you're done!
 
 (= [__] (list :a :b :c) (vec '(:a :b :c)) (vector :a :b :c))
+#+END_SRC
 
 ** solutions
 
@@ -126,12 +130,17 @@ Solutions:
 :a :b :c
 
 * ;; 4Clojure Question 7
+
+#+BEGIN_SRC clojure
+
+
 ;; When operating on a Vector, the conj function will return a new
 ;; vector with one or more items "added" to the end. 
 
 (= __ (conj [1 2 3] 4))
 
 (= __ (conj [1 2] 3 4))
+#+END_SRC
 
 ** solutions
 
@@ -142,11 +151,16 @@ Solutions:
 [1 2 3 4]
 
 * ;; 4Clojure Question 8
+
+#+BEGIN_SRC clojure
+
+
 ;; Sets are collections of unique values. 
 
 (= __ (set '(:a :a :b :c :c :c :c :d :d)))
 
 (= __ (clojure.set/union #{:a :b :c} #{:b :c :d}))
+#+END_SRC
 
 ** solutions
 
@@ -210,6 +224,10 @@ aceeca1's solution:
 ------------------------------------------------------------------------------------------------
 
 * ;; 4Clojure Question 10
+
+#+BEGIN_SRC clojure
+
+
 ;; Maps store key-value pairs. Both maps and keywords can be used as
 ;; lookup functions. Commas can be used to make maps more readable,
 ;; but they are not required. 
@@ -217,6 +235,7 @@ aceeca1's solution:
 (= __ ((hash-map :a 10, :b 20, :c 30) :b))
 
 (= __ (:b {:a 10, :b 20, :c 30}))
+#+END_SRC
 
 ** solutions
 Solutions:
@@ -224,11 +243,16 @@ Solutions:
 20
 
 * ;; 4Clojure Question 11
+
+#+BEGIN_SRC clojure
+
+
 ;; When operating on a map, the conj function returns a new map with
 ;; one or more key-value pairs "added". Use M-x 4clojure-check-answers
 ;; when you're done!
 
 (= {:a 1, :b 2, :c 3} (conj {:a 1} __ [:c 3]))
+#+END_SRC
 
 ** solutions
 
@@ -239,6 +263,10 @@ Solutions:
 
 [:b 2]]]
 * ;; 4Clojure Question 12
+
+#+BEGIN_SRC clojure
+
+
 ;; All Clojure collections support sequencing. You can operate on
 ;; sequences with functions like first, second, and last. 
 
@@ -247,6 +275,7 @@ Solutions:
 (= __ (second [2 3 4]))
 
 (= __ (last (list 1 2 3)))
+#+END_SRC
 
 ** solutions
 
@@ -255,10 +284,15 @@ Solutions:
 3
 
 * ;; 4Clojure Question 13
+
+#+BEGIN_SRC clojure
+
+
 ;; The rest function will return all the items of a sequence except
 ;; the first. Use M-x 4clojure-check-answers when you're done!
 
 (= __ (rest [10 20 30 40]))
+#+END_SRC
 
 ** solutions
 
@@ -269,6 +303,10 @@ Solutions:
 [20 30 40]
 
 * ;; 4Clojure Question 14
+
+#+BEGIN_SRC clojure
+
+
 ;; Clojure has many different ways to create functions. 
 
 (= __ ((fn add-five [x] (+ x 5)) 3))
@@ -278,6 +316,7 @@ Solutions:
 (= __ (#(+ % 5) 3))
 
 (= __ ((partial + 5) 3))
+#+END_SRC
 
 ** solutions
 
@@ -286,6 +325,10 @@ Solutions:
 8
 
 * ;; 4Clojure Question 15
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which doubles a number. 
 
 (= (__ 2) 4)
@@ -295,6 +338,7 @@ Solutions:
 (= (__ 11) 22)
 
 (= (__ 7) 14)
+#+END_SRC
 
 ** solutions
 
@@ -327,6 +371,10 @@ thegeez's solution:
 (fn [n] (+ n n))
 
 * ;; 4Clojure Question 16
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns a personalized greeting. 
 
 (= (__ "Dave") "Hello, Dave!")
@@ -334,6 +382,7 @@ thegeez's solution:
 (= (__ "Jenn") "Hello, Jenn!")
 
 (= (__ "Rhea") "Hello, Rhea!")
+#+END_SRC
 
 ** solutions
 
@@ -383,12 +432,17 @@ benizi's solution:
   (str "Hello, " name "!"))
 
 * ;; 4Clojure Question 17
+
+#+BEGIN_SRC clojure
+
+
 ;; The map function takes two arguments: a function (f) and a sequence
 ;; (s). Map returns a new sequence consisting of the result of
 ;; applying f to each item of s. Do not confuse the map function with
 ;; the map data structure. 
 
 (= __ (map #(+ % 5) '(1 2 3)))
+#+END_SRC
 
 ** solutions
 
@@ -400,11 +454,16 @@ Solutions:
 0x89's solution:
 
 * ;; 4Clojure Question 18
+
+#+BEGIN_SRC clojure
+
+
 ;; The filter function takes two arguments: a predicate function (f)
 ;; and a sequence (s). Filter returns a new sequence consisting of all
 ;; the items of s for which (f item) returns true. 
 
 (= __ (filter #(> % 5) '(3 4 5 6 7)))
+#+END_SRC
 
 ** solutions
 
@@ -432,6 +491,10 @@ foantell's solution:
 '(6 7)
 
 * ;; 4Clojure Question 19
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns the last element in a sequence.
 ;; Restrictions (please don't use these function(s)): last 
 
@@ -440,6 +503,7 @@ foantell's solution:
 (= (__ '(5 4 3)) 3)
 
 (= (__ ["b" "c" "d"]) "d")
+#+END_SRC
 
 ** solutions
 
@@ -524,6 +588,10 @@ benizi's solution:
   (reduce (fn [a b] b) nil lst))
 
 * ;; 4Clojure Question 20
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns the second to last element from a
 ;; sequence. Use M-x 4clojure-check-answers when you're done!
 
@@ -532,6 +600,7 @@ benizi's solution:
 (= (__ ["a" "b" "c"]) "b")
 
 (= (__ [[1 2] [3 4]]) [1 2])
+#+END_SRC
 
 ** solutions
 #(first (rest (reverse %)))
@@ -614,6 +683,10 @@ benizi's solution:
 (comp fnext reverse)
 
 * ;; 4Clojure Question 21
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns the Nth element from a sequence.
 ;; Restrictions (lpease don't use these function(s)): nth 
 (= (__ '(4 5 6 7) 2) 6)
@@ -623,6 +696,7 @@ benizi's solution:
 (= (__ [1 2 3 4] 1) 2)
 
 (= (__ '([1 2] [3 4] [5 6]) 2) [5 6])
+#+END_SRC
 
 ** solutions
 (fn my-nth [lat n] 
@@ -716,6 +790,10 @@ benizi's solution:
         (recur (dec n) (first l) (rest l)))))
 
 * ;; 4Clojure Question 22
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns the total number of elements in a
 ;; sequence. Restrictions (please don't use these function(s)): count
 ;; Use M-x 4clojure-check-answers when you're done!
@@ -729,6 +807,7 @@ benizi's solution:
 (= (__ '(13)) 1)
 
 (= (__ '(:a :b :c)) 3)
+#+END_SRC
 
 ** solutions
 
@@ -820,6 +899,10 @@ benizi's solution:
   (reduce + (map (constantly 1) lst)))
 
 * ;; 4Clojure Question 23
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which reverses a sequence. Restrictions (please
 ;; don't use these function(s)): reverse, rseq 
 
@@ -828,6 +911,7 @@ benizi's solution:
 (= (__ (sorted-set 5 7 2 7)) '(7 5 2))
 
 (= (__ [[1 2][3 4][5 6]]) [[5 6][3 4][1 2]])
+#+END_SRC
 
 ** solutions
 
@@ -926,6 +1010,9 @@ benizi's solution:
   (reduce conj '() lst))
 
 * ;; 4Clojure Question 24
+
+#+BEGIN_SRC clojure
+
 ;; Write a function which returns the sum of a sequence of numbers.
 ;; Use M-x 4clojure-check-answers when you're done!
 
@@ -938,6 +1025,7 @@ benizi's solution:
 (= (__ '(0 0 -1)) -1)
 
 (= (__ '(1 10 3)) 14)
+#+END_SRC
 
 ** solutions
 
@@ -995,6 +1083,10 @@ jimm's solution:
 #(reduce + %)
 
 * ;; 4Clojure Question 25
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns only the odd numbers from a
 ;; sequence. Use M-x 4clojure-check-answers when you're done!
 
@@ -1005,6 +1097,7 @@ jimm's solution:
 (= (__ [2 2 4 6]) '())
 
 (= (__ [1 1 1 3]) '(1 1 1 3))
+#+END_SRC
 
 ** solutions
 
@@ -1062,6 +1155,10 @@ ming's solution:
 filter #(= 1 (rem % 2))
 
 * ;; 4Clojure Question 26
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns the first X fibonacci numbers. Use
 ;; M-x 4clojure-check-answers when you're done!
 
@@ -1070,6 +1167,7 @@ filter #(= 1 (rem % 2))
 (= (__ 6) '(1 1 2 3 5 8))
 
 (= (__ 8) '(1 1 2 3 5 8 13 21))
+#+END_SRC
 
 ** solutions
 (fn fibs [x]
@@ -1191,6 +1289,10 @@ benizi's solution:
       l)))
 
 * ;; 4Clojure Question 27
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which returns true if the given sequence is a
 ;; palindrome.<br/><br> Hint: "racecar" does not equal '(\r \a \c \e
 ;; \c \a \r) Use M-x 4clojure-check-answers when you're done!
@@ -1204,6 +1306,7 @@ benizi's solution:
 (true? (__ '(1 1 3 3 1 1)))
 
 (false? (__ '(:a :b :c)))
+#+END_SRC
 
 ** solutions
 (fn palin [lst] 
@@ -1301,6 +1404,10 @@ benizi's solution:
       :else false)))
 
 * ;; 4Clojure Question 28
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which flattens a sequence. Restrictions (please
 ;; don't use these function(s)): flatten 
 
@@ -1309,6 +1416,7 @@ benizi's solution:
 (= (__ ["a" ["b"] "c"]) '("a" "b" "c"))
 
 (= (__ '((((:a))))) '(:a))
+#+END_SRC
 
 ** solutions
 
@@ -1479,6 +1587,10 @@ benizi's solution:
           (recur r (conj acc f)))))))
 
 * ;; 4Clojure Question 29
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which takes a string and returns a new string
 ;; containing only the capital letters. Use M-x 4clojure-check-answers
 ;; when you're done!
@@ -1488,6 +1600,7 @@ benizi's solution:
 (empty? (__ "nothing"))
 
 (= (__ "$#A(*&987Zf") "AZ")
+#+END_SRC
 
 ** solutions
 
@@ -1567,6 +1680,10 @@ benizi's solution:
 #(apply str (re-seq #"[A-Z]" %))
 
 * ;; 4Clojure Question 30
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which removes consecutive duplicates from a
 ;; sequence. Use M-x 4clojure-check-answers when you're done!
 
@@ -1575,6 +1692,7 @@ benizi's solution:
 (= (__ [1 1 2 3 3 2 2 3]) '(1 2 3 2 3))
 
 (= (__ [[1 2] [1 2] [3 4] [1 2]]) '([1 2] [3 4] [1 2]))
+#+END_SRC
 
 ** solutions
 
@@ -1663,6 +1781,10 @@ benizi's solution:
 #(partition-by identity %)
 
 * ;; 4Clojure Question 31
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which packs consecutive duplicates into sub-lists.
 ;; Use M-x 4clojure-check-answers when you're done!
 
@@ -1671,6 +1793,7 @@ benizi's solution:
 (= (__ [:a :a :b :b :c]) '((:a :a) (:b :b) (:c)))
 
 (= (__ [[1 2] [1 2] [3 4]]) '(([1 2] [1 2]) ([3 4])))
+#+END_SRC
 
 ** solutions
 Solutions:
@@ -1726,6 +1849,10 @@ lllllllllllll's solution:
         (conj a [b]))) [] s))
 
 * ;; 4Clojure Question 32
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which duplicates each element of a sequence. Use
 ;; M-x 4clojure-check-answers when you're done!
 
@@ -1736,6 +1863,7 @@ lllllllllllll's solution:
 (= (__ [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4]))
 
 (= (__ [[1 2] [3 4]]) '([1 2] [1 2] [3 4] [3 4]))
+#+END_SRC
 
 ** Solutions
 Account SettingsLeaguesSubmit a Problem
@@ -1824,6 +1952,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 33
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which replicates each element of a sequence a
 ;; variable number of times. 
 
@@ -1836,6 +1968,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= (__ [[1 2] [3 4]] 2) '([1 2] [1 2] [3 4] [3 4]))
 
 (= (__ [44 33] 2) [44 44 33 33])
+#+END_SRC
 
 ** Solutions
 
@@ -1920,6 +2053,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 34
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which creates a list of all integers in a given
 ;; range. Restrictions (please don't use these function(s)): range Use
 ;; M-x 4clojure-check-answers when you're done!
@@ -1929,6 +2066,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= (__ -2 2) '(-2 -1 0 1))
 
 (= (__ 5 8) '(5 6 7))
+#+END_SRC
 
 ** Solutions
 
@@ -2029,6 +2167,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 35
+
+#+BEGIN_SRC clojure
+
+
 ;; Clojure lets you give local names to values using the special
 ;; let-form. Use M-x 4clojure-check-answers when you're done!
 
@@ -2037,6 +2179,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= __ (let [x 3, y 10] (- y x)))
 
 (= __ (let [x 21] (let [y 3] (/ x y))))
+#+END_SRC
 
 ** Solutions
 
@@ -2109,6 +2252,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 36
+
+#+BEGIN_SRC clojure
+
+
 ;; Can you bind x, y, and z so that these are all true? 
 
 (= 10 (let __ (+ x y)))
@@ -2116,6 +2263,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= 4 (let __ (+ y z)))
 
 (= 1 (let __ z))
+#+END_SRC
 
 ** Solutions
 
@@ -2196,9 +2344,14 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 37
+
+#+BEGIN_SRC clojure
+
+
 ;; Regex patterns are supported with a special reader macro. 
 
 (= __ (apply str (re-seq #"[A-Z]+" "bA1B3Ce ")))
+#+END_SRC
 
 ** Solutions
 
@@ -2271,6 +2424,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 38
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which takes a variable number of parameters and
 ;; returns the maximum value. Restrictions (please don't use these
 ;; function(s)): max, max-key 
@@ -2280,6 +2437,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= (__ 30 20) 30)
 
 (= (__ 45 67 11) 67)
+#+END_SRC
 
 ** Solutions
 
@@ -2366,6 +2524,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * ;; 4Clojure Question 39
+
+#+BEGIN_SRC clojure
+
+
 ;; Write a function which takes two sequences and returns the first
 ;; item from each, then the second item from each, then the third,
 ;; etc. Restrictions (please don't use these function(s)): interleave
@@ -2378,6 +2540,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= (__ [1 2 3 4] [5]) [1 5])
 
 (= (__ [30 20] [25 15]) [30 25 20 15])
+#+END_SRC
 
 ** Solutions
 
