@@ -1,10 +1,14 @@
+
 * ;; 4Clojure Question 1
 ;; This is a clojure form. Enter a value which will make the form
 ;; evaluate to true. Don't over think it! If you are confused, see the
 ;; <a href='/directions'>getting started</a> page. Hint: true is equal
 ;; to true. Use M-x 4clojure-check-answers when you're done!
 
+#+BEGIN_SRC clojure
 (= __ true)
+#+END_SRC
+
 
 ** solutions
 
@@ -170,10 +174,14 @@ foantell's solution:
 '#{:a :b :c :d}
 
 * ;; 4Clojure Question 9
+
+#+BEGIN_SRC clojure
 ;; When operating on a set, the conj function returns a new set with
 ;; one or more keys "added". 
 
+
 (= #{1 2 3 4} (conj #{1 4 3} __))
+#+END_SRC
 
 ** solutions
 Solutions:
@@ -823,10 +831,12 @@ benizi's solution:
 
 ** solutions
 
+#+BEGIN_SRC clojure
 (fn my-reverse [lst]
   (cond (empty? lst)()
         :else (cons (last lst)
                     (my-reverse (butlast lst)))))
+#+END_SRC
 
 0x89's solution:
 #(into () %)
