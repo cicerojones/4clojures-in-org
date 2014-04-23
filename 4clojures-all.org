@@ -1,4 +1,3 @@
-
 * ;; 4Clojure Question 1
 ;; This is a clojure form. Enter a value which will make the form
 ;; evaluate to true. Don't over think it! If you are confused, see the
@@ -13,22 +12,36 @@
 ** solutions
 
 Solutions:
-
+#+BEGIN_SRC clojure
 true
+#+END_SRC
+
 0x89's solution:
+#+BEGIN_SRC clojure
 true
+#+END_SRC
 
-------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
 (not false)
+#+END_SRC
+
 
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 (reify Object (equals [_ _] (= _)))
+#+END_SRC
 
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (= (clojure-version) "1.4.0")
+#+END_SRC
 
 * ;; 4Clojure Question 2
 
@@ -42,8 +55,11 @@ Solutions:
 4
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
-(- 10 (* 2 3))
+#+BEGIN_SRC clojure
 
+
+(- 10 (* 2 3))
+#+END_SRC
 
 * ;; 4Clojure Question 3
 
@@ -64,13 +80,25 @@ Solutions:
 
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (reify Object (equals [_ _] (= _)))
+#+END_SRC
 ----------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 "HELLO WORLD"
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (.toUpperCase "hello world")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 
 * ;; 4Clojure Question 4
@@ -89,7 +117,6 @@ lllllllllllll's solution:
 Solutions:
 
 :a :b :c
-
 
 * ;; 4Clojure Question 5
 
@@ -110,7 +137,11 @@ Solutions:
 
 '(1 2 3 4)
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 [1 2 3 4]
+#+END_SRC
 
 * ;; 4Clojure Question 6
 
@@ -170,22 +201,46 @@ Solutions:
 
 #{:a :b :c :d}
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #{:a :b :c :d}
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (set '(:a :b :c :d))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #{:a :b :c :d}
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #{:a :b :c :d}
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #{:a :b :c :d}
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 '#{:a :b :c :d}
+#+END_SRC
 
 * ;; 4Clojure Question 9
 
@@ -202,25 +257,53 @@ Solutions:
 
 2
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 2
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 2
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 2
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 2
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
-2 3
+#+BEGIN_SRC clojure
+
+
+2
+#+END_SRC 3
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 2
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
-1 2 3
+#+BEGIN_SRC clojure
+
+
+1
+#+END_SRC 2 3
 ------------------------------------------------------------------------------------------------
 
 * ;; 4Clojure Question 10
@@ -260,8 +343,12 @@ Solutions:
 
 {:b 2}
 0x89's solution:
+#+BEGIN_SRC clojure
 
-[:b 2]]]
+
+
+[:b 2]
+#+END_SRC]]
 * ;; 4Clojure Question 12
 
 #+BEGIN_SRC clojure
@@ -346,29 +433,61 @@ Solutions:
 
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (* x 2))
+#+END_SRC
 
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #(* % 2)
 ------------------------------------------------------------------------------------------------
+#+END_SRC
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (* x 2))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
-\* 2
+#+BEGIN_SRC clojure
+
+
+\*
+#+END_SRC 2
 ------------------------------------------------------------------------------------------------
 adereth's solution:
-\* 2
+#+BEGIN_SRC clojure
+
+
+\*
+#+END_SRC 2
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (partial * 2)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(* 2 %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n] (+ n n))
+#+END_SRC
 
 * ;; 4Clojure Question 16
 
@@ -389,47 +508,103 @@ thegeez's solution:
 #(str "Hello," " " % "!")
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % \!)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n] (str "Hello, " n "!"))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % \!)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % \!)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % "!" )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [string] (str "Hello, " string "!"))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % "!")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] (str "Hello, " s "!"))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % "!")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % "!")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (partial format "Hello, %s!")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(str "Hello, " % "!")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n] (str "Hello, " n "!"))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [name]
   (str "Hello, " name "!"))
+#+END_SRC
 
 * ;; 4Clojure Question 17
 
@@ -452,8 +627,12 @@ Solutions:
 
 '(6 7 8)
 0x89's solution:
+#+BEGIN_SRC clojure
 
-* ;; 4Clojure Question 18
+
+
+*
+#+END_SRC ;; 4Clojure Question 18
 
 #+BEGIN_SRC clojure
 
@@ -473,22 +652,46 @@ Solutions:
 
 '(6 7)
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 [6 7]
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 '(6 7)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 [6 7]
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 [6 7]
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 '(6 7)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 '(6 7)
+#+END_SRC
 
 * ;; 4Clojure Question 19
 
@@ -510,82 +713,166 @@ foantell's solution:
 (fn [x] (first (reverse x)))
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (first (reverse x)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 (comp peek vec)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [[x & more]]
   (if more
     (recur more)
     x))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll]
   (loop [remaining coll]
     (let [[head & rest] remaining]
     (if (empty? rest)
       head
       (recur rest)))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
         (if (next s)
           (recur (next s))
           (first s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll] (first (reverse coll)) )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [ aseq ](first (reverse aseq)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(if (next %) (recur (next %)) (first %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll] (first (reverse coll)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [a b] b) %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(nth % (dec (count %)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [in]
   (if-let [r (next in)]
     (recur r)
     (first in)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst]
   (reduce (fn [a b] b) nil lst))
+#+END_SRC
 
 * ;; 4Clojure Question 20
 
@@ -605,75 +892,159 @@ benizi's solution:
 ** solutions
 #(first (rest (reverse %)))
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 (comp peek pop vec)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (first (rest (reverse x))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(-> % vec pop peek)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(nth (reverse %) 1)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (comp second reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll]
   (loop [remaining coll]
     (let [[head & rest] remaining]
     (if (= 1 (count rest))
       head
       (recur rest)))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first next reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (comp second reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first rest reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (first (rest (reverse x))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first rest reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 (comp second reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [ aseq ](second (reverse aseq)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(last (butlast %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first last #(partition 2 1 %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(second (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop 1 (reverse %)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(nth % (dec (dec (count %))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (comp second reverse)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [[pu l & more :as in]]
   (if more
     (recur (next in))
     pu))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
-#_(blech fn [lst]
+#+BEGIN_SRC clojure
+
+
+#_
+#+END_SRC(blech fn [lst]
   (loop [f (first lst)
          l (rest lst)]
     (if (< 1 (count l))
@@ -704,83 +1075,163 @@ benizi's solution:
       :else (my-nth (rest lat) (dec n))))
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop %2 %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn self [xs i] (cond (= i 0) (first xs) true (self (rest xs) (- i 1))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop %2 %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #((vec %) %2)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [as pos]
 (last (take (+ pos 1) as)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [seq pos]
   (last (take (+ pos 1) seq)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #((vec %1) %2)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
-#(first(drop %2 %1))
+#+BEGIN_SRC clojure
+
+
+#(first(drop %2 %1)
+<sclojure)
 ------------------------------------------------------------------------------------------------
-austintaylor's solution:
+
 (fn [s n]
   (first (drop n s)))
+austintaylor's solution:
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll n] 
   (if (= n 0)
     (first coll)
     (recur (rest coll) (dec n))
   )
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(last (take (+ %2 1) %1))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop %2 %1))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s i] (if (= i 0) (first s) (recur (rest s) (- i 1))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop %2 %1))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop %2 %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(loop [count %2, coll %1]
   (if (zero? count) (first coll)
    (recur (dec count) (next coll))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(first (drop %2 %1))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(loop [coll %1
         idx 0]
    (if (= idx %2)
      (first coll)
      (recur (rest coll) (inc idx))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (comp first nthrest)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s n]
   (if (zero? n)
 (first s)
 (recur (next s) (dec n))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst n]
   (loop [n n
          el (first lst)
@@ -788,6 +1239,7 @@ benizi's solution:
     (if (zero? n)
         el
         (recur (dec n) (first l) (rest l)))))
+#+END_SRC
 
 * ;; 4Clojure Question 22
 
@@ -817,86 +1269,170 @@ benizi's solution:
     (inc (size (rest lst)))))
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [x _] (+ 1 x)) 0 %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
-reduce (fn [m i] (+ m 1)) 0
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC (fn [m i] (+ m 1)) 0
 ------------------------------------------------------------------------------------------------
 darren's solution:
-reduce (fn [c _] (+ c 1)) 0
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC (fn [c _] (+ c 1)) 0
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(-> (map-indexed list %) last first inc)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] 
   (loop [ans 0
          lst x]
     (if (empty? lst)
       ans
       (recur (inc ans) (rest lst)))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [seq]
   (->> (map (fn [x] 1) seq)
        (reduce +)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (comp (partial apply +) (partial map #(do % 1)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [sequence] (reduce (fn [acc v] (inc acc)) 0 sequence))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (reduce + (map (constantly 1) s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs] (reduce + (map (fn [x] 1) xs) ) )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(loop [s % n 0]
   (if (empty? s)
     n
     (recur (rest s) (inc n))
     )
   )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 (partial reduce (fn[x y] (inc x)) 0)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (partial (fn [i s] (if (empty? s) i (recur (+ i 1) (rest s)))) 0)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [tot _] (inc tot)) 0 %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(-> % (interleave (range)) last inc)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce + (map (fn [_] 1) %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce + (map (fn [x] 1) %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] 
   (loop [idx 0]
     (if (= :not-found (nth s idx :not-found))
       idx
       (recur (inc idx)))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
-reduce (fn [x _] (inc x)) 0
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC (fn [x _] (inc x)) 0
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [in]
   (reduce (fn [c _] (inc c)) 0  in))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst]
   (reduce + (map (constantly 1) lst)))
+#+END_SRC
 
 * ;; 4Clojure Question 23
 
@@ -923,39 +1459,78 @@ benizi's solution:
 #+END_SRC
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #(into () %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
-reduce #(conj %1 %2) '()
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC #(conj %1 %2) '()
 ------------------------------------------------------------------------------------------------
 darren's solution:
-into ()
+#+BEGIN_SRC clojure
+
+
+into
+#+END_SRC ()
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
-into ()
+#+BEGIN_SRC clojure
+
+
+into
+#+END_SRC ()
 ------------------------------------------------------------------------------------------------
 wills's solution:
-reduce #(cons %2 %1) []
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC #(cons %2 %1) []
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(into '() %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #(map (vec %) (range (dec (count %)) -1 -1))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (loop [result []
          s s]
     (if (seq s)
       (recur (concat [(first s)] result) (rest s))
       result)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (reduce conj '() s))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs]
   (reduce 
     (fn [first second] (cons second first))
@@ -963,51 +1538,96 @@ bradkaiser's solution:
     xs
   )
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(loop [n (count %) ret [] res %]
   (if (zero? n)
     ret 
     (recur (dec n) (conj ret (last res)) (take (- n 1) res)))
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
-apply (partial conj ())
+#+BEGIN_SRC clojure
+
+
+apply
+#+END_SRC (partial conj ())
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (partial (fn [rs is] (if (empty? is) rs (recur (conj rs (first is)) (rest is)))) ())
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce conj () %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
-into '()
+#+BEGIN_SRC clojure
+
+
+into
+#+END_SRC '()
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(loop [coll % v ()]
               (if coll (recur (next coll) (conj v (first coll)))
                 v))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce conj '() %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] 
   (loop [idx (dec (count s))
          ret []]
     (if (not (neg? idx))
       (recur (dec idx) (conj ret (nth (vec s) idx)))
       ret)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce conj () %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
-into '()
+#+BEGIN_SRC clojure
+
+
+into
+#+END_SRC '()
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst]
   (reduce conj '() lst))
+#+END_SRC
 
 * ;; 4Clojure Question 24
 
@@ -1035,52 +1655,116 @@ Solutions:
 
 reduce +
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply + %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
-apply +
+#+BEGIN_SRC clojure
+
+
+apply
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 darren's solution:
-apply +
+#+BEGIN_SRC clojure
+
+
+apply
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply + %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
-reduce + 0
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC + 0
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce + %1)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
-apply +
+#+BEGIN_SRC clojure
+
+
+apply
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 adereth's solution:
-apply +
+#+BEGIN_SRC clojure
+
+
+apply
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
-reduce +
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
-reduce +
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
-apply +
+#+BEGIN_SRC clojure
+
+
+apply
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 dlee's solution:
-reduce +
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
-reduce +
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply + %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
-reduce +
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC +
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce + %)
+#+END_SRC
 
 * ;; 4Clojure Question 25
 
@@ -1107,52 +1791,116 @@ jimm's solution:
         :else (build-odd (rest lst))))
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter odd? %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
-filter #(= 1 (mod % 2))
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC #(= 1 (mod % 2))
 ------------------------------------------------------------------------------------------------
 darren's solution:
-filter odd?
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC odd?
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter odd? %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
-filter odd?
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC odd?
 ------------------------------------------------------------------------------------------------
 foantell's solution:
-filter odd?
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC odd?
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
-filter #(== (mod % 2) 1)
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC #(== (mod % 2) 1)
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
-filter (fn [x] (= 1 (rem x 2)))
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC (fn [x] (= 1 (rem x 2)))
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
-filter odd?
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC odd?
 ------------------------------------------------------------------------------------------------
 dlee's solution:
-filter odd?
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC odd?
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
-filter (fn [x] (= 1 (mod x 2)))
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC (fn [x] (= 1 (mod x 2)))
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter odd? %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(for [x % :when (odd? x)] x)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter odd? %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
-filter #(= 1 (rem % 2))
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC #(= 1 (rem % 2))
 ------------------------------------------------------------------------------------------------
 ming's solution:
-filter #(= 1 (rem % 2))
+#+BEGIN_SRC clojure
+
+
+filter
+#+END_SRC #(= 1 (rem % 2))
 
 * ;; 4Clojure Question 26
 
@@ -1179,21 +1927,40 @@ filter #(= 1 (rem % 2))
 		(fibs (dec x)))))
 
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 (fn* [p1__2673#] (take p1__2673# ((fn fibs [] (lazy-cat [1 1] (map + (fibs) (rest (fibs))))))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [i] (take i '(1 1 2 3 5 8 13 21)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(letfn [(f [a b] (lazy-seq (cons a (f b (+ a b)))))]
     (take % (f 1 1)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(take %
    (concat [1 1]
      ((fn f [i j] (lazy-cat [(+ i j)] (f j (+ i j)))) 1 1)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] 
   (loop [l 1
          c 1
@@ -1202,27 +1969,47 @@ wills's solution:
     (if (= total_length 0)
       result
       (recur c (+ c l) (- total_length 1) (conj result (+ c l))))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % (map first (iterate (fn [[x y]]
                         [y (+ x y)]) [1 1])))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #((apply comp (repeat (- % 2) (fn [x] (conj x (+ (peek x) (peek (pop x))))))) [1 1])
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 #(take %
   (map first
     (iterate (fn [[i1 i2]]
       [i2 (+ i1 i2)])
       [1 1])))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n]
   (map first (reductions
     (fn [[a b] _] [b (+ a b)]) [1 1] (range 1 n))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n]   
  (reverse ((fn  [x coll] 
    (cond
@@ -1237,48 +2024,92 @@ bradkaiser's solution:
    )
  ) (- n 2) (list 1 1) )
 ))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % (map first (iterate (fn [[a b]] [b (+ a b)]) [1 1])))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % (map first (iterate (fn [[a b]] [b (+ a b)]) [1 1])))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [ n ] 
     (take n ((fn fibonacci 
                 ([] (cons 1 (lazy-seq (fibonacci 0 1))))
                 ([a b] (cons (+ a b) (lazy-seq (fibonacci b (+ a b))))))))
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % (list* 1 (map first
     (iterate (fn [[m n]] [(+ m n) m]) [1 1]))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % (map first (iterate (fn [x] (list (second x) (+ (first x) (second x)))) '(1 1))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % (drop 1 (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1]))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [a b] 
             (conj a (+ (nth a (- (count a) 2)) (last a)))) [1 1] (range (- % 2)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n]
   (map first (take n (iterate (fn [v] [(apply + v) (first v)]) [1 0]))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(take % ((fn fib [a b] (cons a (lazy-seq (fib b (+ a b))))) 1 1))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n]
     (take n (map first (iterate (fn [[l r]]
                                   [r (+ l r)])
                                 [1 1]))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [n]
   (loop [a 1
          b 1
@@ -1287,6 +2118,7 @@ benizi's solution:
     (if (pos? n)
       (recur b (+ a b) (conj l (+ a b)) (dec n))
       l)))
+#+END_SRC
 
 * ;; 4Clojure Question 27
 
@@ -1321,32 +2153,67 @@ benizi's solution:
 
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs] (= (map identity xs) (reverse xs)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (seq %) (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (seq %) (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #( if (string? %)
     (= (str %) (reduce str (reverse %)))
     (= % (reverse %)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (seq %) (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (reverse %) (seq %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (reverse %) (seq %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (reverse %) (seq %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn palindrome [xs]
   ((fn helper [ys zs]
     (cond
@@ -1357,43 +2224,87 @@ bradkaiser's solution:
     )
   )  xs (reverse xs) )
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (apply str (reverse %)) (apply str %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
-#(= (apply str (reverse %)) (apply str %))
+#+BEGIN_SRC clojure
+
+
+#(= (apply str (reverse
+#+END_SRC %)) (apply str %))
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (= (reverse x) (seq x)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (seq %) (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (seq %) (reverse %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (seq %) (reverse (seq %)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] 
   (let [v (vec s)] 
     (let [l (int (/ (count v) 2))] 
       (= (take l v) (reverse (take-last l v))))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (let [s (vec s)]
   	(= (reverse s) s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(= (reverse %) (seq %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [in] (= (seq in) (reverse in)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst]
   (loop [l (seq lst)]
     (cond
@@ -1402,6 +2313,7 @@ benizi's solution:
           (recur (drop 1 (butlast l)))
           true)
       :else false)))
+#+END_SRC
 
 * ;; 4Clojure Question 28
 
@@ -1427,38 +2339,69 @@ Solutions:
 (fn [lst] (filter (complement sequential?)
           	(rest (tree-seq sequential? seq lst))))
 0x89's solution:
-Scored 118, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 118, before 4clojure started saving solutions.
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 reduce
+#+END_SRC
 (fn self [xs e] (concat xs (cond (coll? e) (reduce self '() e) true (list e))))
 '()
 ------------------------------------------------------------------------------------------------
 darren's solution:
-#(remove % (tree-seq % seq %2)) sequential?
+#+BEGIN_SRC clojure
+
+
+#(remove % (tree-seq % seq %2))
+#+END_SRC sequential?
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 (fn f [r [a & b]]
   (if a
     (if (coll? a)
       (f (into r (f [] a)) b)
       (f (into r [a]) b))
-    r))
+    r)
+#+END_SRC)
 []
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter (complement sequential?)
    (rest (tree-seq sequential? seq %)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll] 
   (filter (complement sequential?)
           (rest (tree-seq sequential? identity coll))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter (complement sequential?) (rest (tree-seq sequential? seq %)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (loop [s s]
     (if (some sequential? s)
@@ -1471,14 +2414,22 @@ adereth's solution:
               s))
       s)
     )
+#+END_SRC
 )
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (filter (complement sequential?)
     (tree-seq sequential? seq s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn fake [xs]
   (cond
     (empty? xs)
@@ -1489,15 +2440,23 @@ bradkaiser's solution:
       (concat (list (first xs)) (fake (rest xs)))
   )
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn fla [x]
   (if (coll? x)
     (when (seq x) (concat (fla (first x)) (fla (rest x))))
     [x])
   )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [a] (loop [t a]  
            (if (empty? (for [x t :when (coll? x)] x))
             t
@@ -1505,25 +2464,41 @@ dlee's solution:
            )
          )
 )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn my-flatten
     [ r s ]
+#+END_SRC
     (if (not (or (list? s) (vector? s)))
         (conj r s)
         (reduce my-flatten r (reverse s)))) ()
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 (letfn [
   (myflatten [coll]
     (mapcat #(if (coll? %) (myflatten %) [%]) coll)
   )]
   #(myflatten %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(filter (complement sequential?) (tree-seq sequential? identity %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll]
     (letfn [(f [coll]
               (loop [coll coll
@@ -1534,8 +2509,12 @@ jimm's solution:
                  (vector? (first coll)) (recur (next coll) (vec (concat answer (f (first coll)))))
                  :else (recur (next coll) (conj answer (first coll))))))]
       (f coll)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (loop [remaining s
          result []]
@@ -1545,8 +2524,12 @@ lllllllllllll's solution:
         (if (sequential? x)
           (recur (concat x (rest remaining)) result)
           (recur (rest remaining) (conj result x)))))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(some (fn [s] (if (not-any? coll? s) s false)) (iterate 
                                 (fn [s] 
                                   (loop [ret []
@@ -1558,23 +2541,35 @@ ming's solution:
                                                 (conj ret (first tmp)) )
                                              (rest tmp))))) 
                                 %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (fn flat [x]
    (mapcat 
     #(if (coll? %)
        (flat %)
        (list %))
     x))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn fl [in]
   (mapcat (fn [item]
     (if (sequential? item)
 (fl (seq item))
 [item])) in))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [l]
   (loop [q l
          acc []]
@@ -1584,7 +2579,8 @@ benizi's solution:
             r (rest q)]
         (if (sequential? f)
           (recur (concat f r) acc)
-          (recur r (conj acc f)))))))
+          (recur r (conj acc f))))))
+#+END_SRC)
 
 * ;; 4Clojure Question 29
 
@@ -1610,74 +2606,158 @@ Solutions:
 
 (fn [x] (apply str (re-seq #"[A-Z]" x)))
 0x89's solution:
-Scored 115, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 115, before 4clojure started saving solutions.
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] (apply str (filter #(not= (.toLowerCase (str %)) (str %)) s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (filter (fn [c] (< 64 (int c) 91)) %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (re-seq #"[A-Z]" %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] 
      (loop [lst (re-seq #"[A-Z]" x)
             ans ""] 
         (if (empty? lst)
           ans
           (recur (rest lst) (str ans (first lst))))))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (re-seq #"[A-Z]" %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #(clojure.string/replace % #"[^A-Z]" "")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] (reduce str (filter #(Character/isUpperCase %) s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (re-seq #"[A-Z]" %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (.replaceAll x "[^A-Z]" "") )
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (clojure.string/split % #"[^A-Z]"))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (re-seq #"[A-Z]+" %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] (reduce str (re-seq #"[A-Z]" s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(clojure.string/replace % #"[^A-Z]+" "")
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce str (re-seq #"[A-Z]" %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
     (apply str (for [c s :when (Character/isUpperCase c)] c)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (apply str (re-seq #"[A-Z]" s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] (apply str (filter #(<= 65 (int %) 90) s)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ramo's solution:
-#(apply str (re-seq #"[A-Z]" %))
+#+BEGIN_SRC clojure
+
+
+#(apply str (re-seq #"[A-Z]"
+#+END_SRC %))
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (filter (fn [c] (Character/isUpperCase c)) %))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply str (re-seq #"[A-Z]" %))
+#+END_SRC
 
 * ;; 4Clojure Question 30
 
@@ -1702,36 +2782,75 @@ Solutions:
 
 partition-by (fn [x] x)
 0x89's solution:
-Scored 29, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 29, before 4clojure started saving solutions.
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 darren's solution:
-partition-by str
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC str
 ------------------------------------------------------------------------------------------------
 amcnamara's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (reverse 
                 (reduce #(if (= (first (first %1)) %2)
                             (conj  (rest %) (cons %2 (first %)))
                             (conj % (list %2))) () x)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(partition-by identity %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 aceeca1's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 adereth's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (partial partition-by identity)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn pack [xs]
    (reverse ((fn helper [xs last accu]
      (cond
@@ -1741,44 +2860,89 @@ bradkaiser's solution:
       :else 
         (recur (rest xs) (list (first xs)) (cons last accu))))
     (rest xs) (list (first xs)) nil)))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ctzsm's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 dlee's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 echevarria's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(partition-by identity %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 icamts's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(partition-by identity %)
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (reduce 
     (fn [a b] 
       (if (= (last (last a)) b) 
         (conj (subvec a 0 (dec (count a))) (conj (last a) b))
         (conj a [b]))) [] s))
+#+END_SRC
 ------------------------------------------------------------------------------------------------
 ming's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 ramo's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 thegeez's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ------------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 #(partition-by identity %)
+#+END_SRC
 
 * ;; 4Clojure Question 31
 
@@ -1800,32 +2964,63 @@ Solutions:
 
 partition-by (fn [x] x)
 0x89's solution:
-Scored 29, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 29, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ----------------------------------------------------------------------------------------------
 darren's solution:
-partition-by str
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC str
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] (reverse 
                 (reduce #(if (= (first (first %1)) %2)
                             (conj  (rest %) (cons %2 (first %)))
                             (conj % (list %2))) () x)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(partition-by identity %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 
 
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (partial partition-by identity)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn pack [xs]
    (reverse ((fn helper [xs last accu]
      (cond
@@ -1835,18 +3030,27 @@ bradkaiser's solution:
       :else 
         (recur (rest xs) (list (first xs)) (cons last accu))))
     (rest xs) (list (first xs)) nil)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
-partition-by identity
+#+BEGIN_SRC clojure
+
+
+partition-by
+#+END_SRC identity
 
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s]
   (reduce 
     (fn [a b] 
       (if (= (last (last a)) b) 
         (conj (subvec a 0 (dec (count a))) (conj (last a) b))
-        (conj a [b]))) [] s))
+        (conj a [b]))) [] s)
+#+END_SRC)
 
 * ;; 4Clojure Question 32
 
@@ -1876,27 +3080,58 @@ Solutions:
                      (cons (first lst)
                            (dupps (rest lst))))))
 0x89's solution:
-Scored 43, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 43, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
-reduce #(conj %1 %2 %2) []
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC #(conj %1 %2 %2) []
 ----------------------------------------------------------------------------------------------
 darren's solution:
-mapcat #(list % %)
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC #(list % %)
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat list % %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [lst x] (concat lst [x x])) [] %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(interleave % %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
-mapcat #(list % %)
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC #(list % %)
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s] (loop [s s r '()]
           (if (seq s)
             (recur (rest s) (concat r [(first s) 
@@ -1905,49 +3140,102 @@ adereth's solution:
             r)
           )
   )
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 #(interleave % %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
-mapcat (fn [x] (list x x))
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC (fn [x] (list x x))
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(interleave % %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
-mapcat (partial repeat 2)
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC (partial repeat 2)
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
-reduce (fn [l x] (concat l (list x x))) ()
+#+BEGIN_SRC clojure
+
+
+reduce
+#+END_SRC (fn [l x] (concat l (list x x))) ()
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [x] [x x]) %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(interleave % %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll]
     (mapcat #(list % %) coll))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [a b] (conj a b b)) [] %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce 
    into
    (for [x %]
      [x x]))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(interleave % %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (partial mapcat (juxt identity identity))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [a] (list a a)) %)
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -1979,76 +3267,160 @@ Solutions:
     (apply interleave (take n (repeat lst)))
   	lst))
 0x89's solution:
-Scored 44, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 44, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs i] (reduce #(concat %1 (replicate i %2)) [] xs))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (partial repeat %2) %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply mapcat list (repeat %2 %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst n] (mapcat (fn [x] (repeat n x)) lst))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [x] (repeat %2 x)) %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x t] (mapcat (partial repeat t) x))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s n]
   (if (= n 1) s
   	(apply interleave (repeat n s))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s n]
   (mapcat (partial repeat n) s))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [x] (repeat %2 x)) %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (partial repeat %2) %)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
-(fn [x n] (mapcat (partial repeat n) x))
+#+BEGIN_SRC clojure
+
+
+(fn [x n] (mapcat (partial
+#+END_SRC repeat n) x))
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [l n](mapcat #(apply conj [] (repeat n %1)) l))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [x] (repeat %2 x)) %1)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [x] (repeat %2 x)) %1)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll n]
     (mapcat #(repeat n %) coll))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s n]
   (for [x s i (range n)]
     x))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply concat (for [x %1]
    (repeat %2 x)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (partial repeat %2) %1)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [items nrepeat]
   (mapcat (partial repeat nrepeat) items))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lst n]
   (mapcat #(repeat n %) lst))
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2076,42 +3448,81 @@ Solutions:
 	  (cond (= x y) ()
     	    :else (cons x (rng (inc x) y))))
 0x89's solution:
-Scored 52, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 52, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s e] (reduce #(conj %1 (+ s (count %1) %2)) [] (replicate (- e s) 0)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (- %2 %) (iterate inc %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (- %2 %) (iterate inc %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x y]
    (loop [ans [x]
           x (inc x)]
      (if (< (first ans) (dec y))
        (recur (cons x ans) (inc x))
        (reverse ans))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (- %2 %) (iterate inc %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s t] (reductions + (merge (repeat (dec (- t s)) 1) s)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [start end] (take-while #(< % end)
                             (iterate inc start)
                             )
   )
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [a b]
   (map-indexed + (repeat (- b a) a)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn bob [min max]
   (if (>= min max) 
     nil
@@ -2119,50 +3530,95 @@ bradkaiser's solution:
     )
   )
 )
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (- %2 %1) (iterate (fn [x] (+ x 1)) %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [a b] (conj a (+ b (count a)))) [] (repeat (- %2 %1) %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [b e] (take-while (partial > e) (iterate inc b)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(take-while (fn [x] (< x %2)) (iterate inc %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (- %2 %) (iterate inc %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [start stop]
     (take (- stop start) (iterate inc start)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [a b]
   (loop [x a r []]
     (if (< x b)
       (recur (inc x) (conj r x))
       r)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (- %2 %1) (iterate inc %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [a b] (take (- b a) (iterate #(inc %) a)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [lo up]
   (take-while #(< % up) (iterate inc lo)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [low high]
   (loop [acc []
          n low]
     (if (= n high)
       acc
       (recur (conj acc n) (inc n)))))
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2187,67 +3643,151 @@ Solutions:
 
 7
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 7
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2273,73 +3813,157 @@ Solutions:
  y 3
  x 7]
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1
  y 3
  x 7]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7, y 3, z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7
- y 3
+ y
+#+END_SRC 3
  z 1]
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 
  y 3 
  x 7]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 y 3 x 7]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 y 3 x 7]
 ----------------------------------------------------------------------------------------------
+#+END_SRC
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 y 3 x 7]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7, y 3, z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 [ x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7, y 3, z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 [ x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 y 3 x 7]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 y (- 4 z) x (- 10 y)]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 [x 7 y 3 z 1]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 [z 1 y 3 x 7]
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2359,67 +3983,151 @@ Solutions:
 
 "ABC"
 0x89's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
 ----------------------------------------------------------------------------------------------
+#+END_SRC
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 "ABC"
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2446,80 +4154,164 @@ Solutions:
 (fn [& args]
 	(first (sort > args)))
 0x89's solution:
-Scored 35, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 35, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x & xs] (reduce #(if (> %2 %1) %2 %1) x xs))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(last (sort %&))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(last (sort %&))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn tess 
    ([x] x)
    ([x y] (if (> x y) x y))
    ([x y & more] (reduce tess (tess x y) more)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& args] (reduce #(if (> %1 %2) %1 %2) args))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (comp - (partial apply min) (partial map -) list)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [ & xs ]
   (reduce #(if (> %1 %2) %1 %2) xs))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& xs]
   (reduce #(if (> %2 %1) %2 %1) xs))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& coll] 
   (reduce (fn [a b] (if (> a b) a b)) coll)
 )
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& coll] (reduce #(if (> %1 %2) %1 %2) coll))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 (comp last sort list)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [ & xs] (last (apply sorted-set xs)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 (comp (partial reduce #(if (>= %1 %2) %1 %2)) vector)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(->> %& (reduce (fn [x y] (if (< x y) y x))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& coll] (loop [c coll mx -99999]
                    (if c (recur (next c) (if (> (first c) mx) (first c)
                                              mx))
                        mx)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& s] 
   (reduce (fn [a b] (if (> a b) a b)) s))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& args] (reduce #(if (> %1 %2) %1 %2) args))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(last (sort %&))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& args]
   (reduce (fn [a b] (if (< a b) b a)) args))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [& args]
   (reduce (fn [a b] (if (< a b) b a)) args))
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2548,36 +4340,71 @@ Solutions:
 
 mapcat #(vec [%1 %2])
 0x89's solution:
-Scored 42, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 42, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs ys]
     (reduce
       #(concat (rest %1) (list (first %1) %2))
       (take (count ys) xs)
       (take (count xs) ys)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
-mapcat list
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC list
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
-mapcat list
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC list
 ----------------------------------------------------------------------------------------------
 wills's solution:
-mapcat (fn [x y] [x y])
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC (fn [x y] [x y])
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll1 coll2]
   (mapcat vector coll1 coll2))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
-mapcat #(list %1 %2)
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC #(list %1 %2)
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s1 s2]
   (flatten (map list s1 s2)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [a0 b0]
   (loop [a a0 b b0 result '()]
     (if (and (seq a) (seq b))
@@ -2586,33 +4413,65 @@ austintaylor's solution:
         (rest b)
         (conj result (first a) (first b)))
       (reverse result))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs ys]
    (mapcat (fn [x y] (list x y)) xs ys)
  )
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [c1 c2] (apply concat (map #(conj [] % %2) c1 c2)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
-mapcat list
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC list
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
-mapcat (fn [x y] [x y])
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC (fn [x y] [x y])
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (fn [x y] [x y]) %1 %2)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [l1 l2] (loop [c1 l1 c2 l2 res []]
               (cond (or (empty? c1) (empty? c2)) res 
                     :else (recur (rest c1) (rest c2) (conj (conj res (first c1)) (first c2))))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
-(comp flatten map) #(list %1 %2)
+#+BEGIN_SRC clojure
+
+
+(comp flatten map)
+#+END_SRC #(list %1 %2)
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [a b]
   (loop [x a
          y b
@@ -2622,19 +4481,36 @@ lllllllllllll's solution:
       (if (and v1 v2)
         (recur (rest x) (rest y) (conj result v1 v2))
         result))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
-mapcat list
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC list
 ----------------------------------------------------------------------------------------------
 ramo's solution:
-mapcat #(list %1 %2)
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC #(list %1 %2)
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
-mapcat list
+#+BEGIN_SRC clojure
+
+
+mapcat
+#+END_SRC list
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x y]
   (mapcat #(vector % %2) x y))
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2656,77 +4532,161 @@ Solutions:
 (fn [x lst] 
 	 (butlast (mapcat  (fn [y] (vector y x))  lst)))
 0x89's solution:
-Scored 73, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 73, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s xs] (drop-last (reduce #(concat %1 [%2 s]) [] xs)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(rest (interleave (repeat %) %2))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(butlast (mapcat (fn [i] [i %]) %2))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 #(drop 1 (interleave (repeat %) %2))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [interposer coll]
   (butlast (mapcat (fn [x]
             [x interposer]) coll)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s x] (cons (first x) (mapcat #(list s %) (next x))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
-#(butlast (interleave %2 (repeat %1)))
+#+BEGIN_SRC clojure
+
+
+#(butlast (interleave
+#+END_SRC %2 (repeat %1)))
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x s]
   (butlast (interleave s (repeat (count s) x))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 #(into [] (drop-last 1 (mapcat (fn [x] (list x %)) %2)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(take (dec (* (count %2) 2)) (interleave %2 (repeat %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(rest (mapcat (partial (fn [x y] (list x y)) %1) %2))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [ v s ] (drop-last (mapcat (fn [x] [x v]) s)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce (fn [v x] (conj v %1 x)) [(first %2)] (rest %2))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(rest (mapcat (fn [x y] [y x]) %2 (repeat %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [sep coll]
     (drop 1 (flatten (map #(list sep %) coll))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [d s]
   (reduce (fn [a b] (conj a d b)) [(first s)] (rest s)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(butlast (interleave %2 (repeat %1)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s l] (rest (mapcat #(list s %) l)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [sep items] (rest (interleave (repeat sep) items)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [sep xs]
   (loop [acc [(first xs)]
          left (rest xs)]
     (if (seq left)
       (recur (conj acc sep (first left)) (rest left))
       acc)))
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2750,72 +4710,135 @@ Solutions:
 	       lst))
 	     (partition-all %2 %1))
 0x89's solution:
-Scored 70, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 70, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [xs s]
   (map last
     (filter #(not= 0 (mod (first %1) s))
       (map-indexed #(list (+ 1 %1) %2) xs))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(remove nil? (map-indexed (fn [i x] (if (= 0 (mod (inc i) %2)) nil x)) %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [c n]
-  (mapcat #(take (dec n) %) (partition-all n c)))
+  (mapcat #(take (dec n) %) (partition-all n c))
+#+END_SRC)
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll pos] 
   (flatten (reduce (fn [coll x] (if (= (rem (inc (count coll)) pos) 0)
                    (conj coll '())
                    (conj coll x)))
           [] 
           coll)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply concat (partition-all (dec %2) %2 %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x s] (remove nil? (map #(if %2 %1 nil) x (cycle (concat (repeat (dec s) true) '(false))))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll n]
   (->> (partition-all n coll)
        (map (partial take (dec n)))
        (flatten)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s x]
   (keep-indexed
     (fn [i a] (when (> (mod (inc i) x) 0) a))
     s))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 #(map first (filter (fn [pair] (not= 0 (mod (inc (last pair)) %2)))
            (map list % (range ))
  ))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll n]
   (loop [coll coll n n ret []]
     (if (empty? coll)
       ret
       (recur (drop n coll) n (into ret (take (dec n) coll))))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [c n] (mapcat identity (partition-all (dec n) n c)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 #(flatten (partition (- %2 1) %2 nil %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply concat (partition-all (dec %2) %2 %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (partial take (dec %2)) (partition-all %2 %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [coll n]
     (loop [coll coll
            i 0
@@ -2824,28 +4847,48 @@ jimm's solution:
        (nil? coll) answer
        (= (dec n) (mod i n)) (recur (next coll) (inc i) answer)
        :else (recur (next coll) (inc i) (conj answer (first coll))))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s n]
   (loop [remaining s
          result []]
     (if (empty? remaining)
       result
       (recur (drop n remaining) (concat result (take (dec n) remaining))))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(mapcat (partial take (dec %2)) (partition-all %2 %1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [s n] (keep-indexed #(if (< 0 (mod (inc %1) n)) %2) s))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [col n]
   (->> col 
     (partition-all n)
     (mapcat (partial take (dec n)))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [list n]
   (loop [acc []
          i 1
@@ -2856,7 +4899,8 @@ benizi's solution:
                (conj acc (first left)))
              (inc i)
              (rest left))
-      acc)))
+      acc))
+#+END_SRC)
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -2878,9 +4922,16 @@ Solutions:
 (fn [n]
   (reduce * (range 1 (inc n))))
 0x89's solution:
-Scored 30, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 30, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 ((fn [r] 
   ((fn [f] (f f)) 
     (fn [y] 
@@ -2890,82 +4941,159 @@ _pcl's solution:
       (if 
         (= 0 n) 1 
         (* n (fact (- n 1)))))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply * % (range 2 %))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x] 
   (loop [curr x
         total 1]
     (if (= curr 0)
       total
       (recur (dec curr) (* curr total)))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (range % 0 -1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x]
   (reduce * (range 1 (inc x))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (fn factorial [x]
   (if (= x 1) 
     1
     (* x (factorial (dec x)))
   )
 )
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply * (range 2 (+ 1 %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (rest (range (inc %))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply * (map inc (range %1)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 #(apply * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (map inc (range %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 #(loop [cnt % acc 1]
      (if (or (zero? cnt) (== 1 cnt)) acc
          (recur (dec cnt) (* acc cnt))))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 (fn [x]
   (loop [i 1 v 1]
     (if (<= i x)
       (recur (inc i) (* v i))
       v)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 #(reduce * (range 1 (inc %)))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
+#+BEGIN_SRC clojure
+
+
 (fn fac [x]
   (if (< x 2) x
     (* x (fac (dec x)))))
+#+END_SRC
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
@@ -3005,70 +5133,158 @@ Solutions:
 
 '(1 4 7 10 13)
 0x89's solution:
-Scored 9, before 4clojure started saving solutions.
+#+BEGIN_SRC clojure
+
+
+Scored
+#+END_SRC 9, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
+#+BEGIN_SRC clojure
+
+
 (take 5 (iterate #(+ 3 %) 1))
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 darren's solution:
+#+BEGIN_SRC clojure
+
+
 [1 4 7 10 13]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
 [1 4 7 10 13]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 wills's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 foantell's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 aceeca1's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 adereth's solution:
+#+BEGIN_SRC clojure
+
+
 [1 4 7 10 13]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 austintaylor's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 bradkaiser's solution:
+#+BEGIN_SRC clojure
+
+
 (list 1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ctzsm's solution:
+#+BEGIN_SRC clojure
+
+
 (range 1 16 3)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 dlee's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 echevarria's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 glchapman's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 icamts's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 jimm's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 lllllllllllll's solution:
+#+BEGIN_SRC clojure
+
+
 [1 4 7 10 13]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ming's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 ramo's solution:
+#+BEGIN_SRC clojure
+
+
 '(1 4 7 10 13)
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 thegeez's solution:
+#+BEGIN_SRC clojure
+
+
 [1 4 7 10 13]
+#+END_SRC
 ----------------------------------------------------------------------------------------------
 benizi's solution:
-[1 4 7 10 13]
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+#+BEGIN_SRC clojure
 
+
+[1 4 7 10 13]
+#+END_SRC
+#+BEGIN_SRC clojure
+
+
+The
+#+END_SRC
+<sclojure content on 4clojure.com is available under the EPL v 1.0 license.Contact us
+(team@4clojure.com)
 * ;; 4Clojure Question 46
 ;; Write a higher-order function which flips the order of the
 ;; arguments of an input function. 
@@ -3081,7 +5297,10 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 
 (= [1 2 3] ((__ take) [1 2 3 4 5] 3))
 
-* ;; 4Clojure Question 47
+*
+
+
+<sclojure ;; 4Clojure Question 47
 ;; The contains? function checks if a KEY is present in a given
 ;; collection. This often leads beginner clojurians to use it
 ;; incorrectly with numerically indexed collections like vectors and
@@ -3104,6 +5323,8 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 
 (= __ (some #(when (even? %) %) [5 6 7 8]))
 
+
+*
 * ;; 4Clojure Question 49
 ;; Write a function which will split a sequence into two parts.
 ;; Restrictions (please don't use these function(s)): split-at 
@@ -3113,8 +5334,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= (__ 1 [:a :b :c :d]) [[:a] [:b :c :d]])
 
 (= (__ 2 [[1 2] [3 4] [5 6]]) [[[1 2] [3 4]] [[5 6]]])
-
-* ;; 4Clojure Question 50
+ ;; 4Clojure Question 50
 ;; Write a function which takes a sequence consisting of items with
 ;; different types and splits them up into a set of homogeneous
 ;; sub-sequences. The internal order of each sub-sequence should be
