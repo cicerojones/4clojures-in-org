@@ -1,4 +1,16 @@
-* ;; 4Clojure Question 1
+* ;; 4Clojure Question 1					      :drill:
+  SCHEDULED: <2015-02-08 Sun>
+  :PROPERTIES:
+  :ID:       746711C5-FD14-4F71-9864-A212D5815AB4
+  :DRILL_LAST_INTERVAL: 3.972
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 3.0
+  :DRILL_EASE: 2.36
+  :DRILL_LAST_QUALITY: 3
+  :DRILL_LAST_REVIEWED: <2015-02-04 Wed 18:25>
+  :END:
 ;; This is a clojure form. Enter a value which will make the form
 ;; evaluate to true. Don't over think it! If you are confused, see the
 ;; <a href='/directions'>getting started</a> page. Hint: true is equal
@@ -41,7 +53,10 @@ ctzsm's solution:
 (= (clojure-version) "1.4.0")
 #+END_SRC
 
-* ;; 4Clojure Question 2
+* ;; 4Clojure Question 2					      :drill:
+  :PROPERTIES:
+  :ID:       3101A095-10A7-4057-A1CF-171916AD50D9
+  :END:
 
 (= (- 10 (* 2 3)) __)
 
@@ -59,7 +74,7 @@ _pcl's solution:
 (- 10 (* 2 3))
 #+END_SRC
 
-* ;; 4Clojure Question 3
+* ;; 4Clojure Question 3					      :drill:
 
 #+BEGIN_SRC clojure
 ;; Clojure strings are Java strings. This means that you can use any
@@ -7261,3 +7276,115 @@ The
           (check #(= %2 [(+ m %) (+ n %)]) diagonal)))
    true)
 
+
+* 4clojures 1-3
+** ;; 4Clojure Question 1					      :drill:
+  SCHEDULED: <2015-02-08 Sun>
+  :PROPERTIES:
+  :ID:       746711C5-FD14-4F71-9864-A212D5815AB4
+  :DRILL_LAST_INTERVAL: 3.972
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 3.0
+  :DRILL_EASE: 2.36
+  :DRILL_LAST_QUALITY: 3
+  :DRILL_LAST_REVIEWED: <2015-02-04 Wed 18:25>
+  :END:
+;; This is a clojure form. Enter a value which will make the form
+;; evaluate to true. Don't over think it! If you are confused, see the
+;; <a href='/directions'>getting started</a> page. Hint: true is equal
+;; to true. Use M-x 4clojure-check-answers when you're done!
+
+#+BEGIN_SRC clojure
+(= __ true)
+#+END_SRC
+
+
+*** solutions
+
+Solutions:
+#+BEGIN_SRC clojure
+true
+#+END_SRC
+
+0x89's solution:
+#+BEGIN_SRC clojure
+true
+#+END_SRC
+
+_pcl's solution:
+#+BEGIN_SRC clojure
+(not false)
+#+END_SRC
+
+
+------------------------------------------------------------------------------------------------
+amcnamara's solution:
+#+BEGIN_SRC clojure
+
+
+(reify Object (equals [_ _] (= _)))
+#+END_SRC
+
+------------------------------------------------------------------------------------------------
+ctzsm's solution:
+#+BEGIN_SRC clojure
+(= (clojure-version) "1.4.0")
+#+END_SRC
+
+** ;; 4Clojure Question 2					      :drill:
+  :PROPERTIES:
+  :ID:       3101A095-10A7-4057-A1CF-171916AD50D9
+  :END:
+
+(= (- 10 (* 2 3)) __)
+
+*** solutions
+
+
+Solutions:
+
+4
+------------------------------------------------------------------------------------------------
+_pcl's solution:
+#+BEGIN_SRC clojure
+
+
+(- 10 (* 2 3))
+#+END_SRC
+
+** ;; 4Clojure Question 3					      :drill:
+   :PROPERTIES:
+   :ID:       33B6D4EF-B893-416D-B2B9-E0EB09E73B70
+   :END:
+
+#+BEGIN_SRC clojure
+;; Clojure strings are Java strings. This means that you can use any
+;; of the Java string methods on Clojure strings. 
+
+(= __ (.toUpperCase "hello world"))
+#+END_SRC
+
+*** solutions
+
+Solutions:
+
+"HELLO WORLD"
+
+------------------------------------------------------------------------------------------------
+adereth's solution:
+#+BEGIN_SRC clojure
+(reify Object (equals [_ _] (= _)))
+#+END_SRC
+----------------------------------------------------------------------------
+jimm's solution:
+#+BEGIN_SRC clojure
+"HELLO WORLD"
+#+END_SRC
+------------------------------------------------------------------------------------------------
+lllllllllllll's solution:
+#+BEGIN_SRC clojure
+(.toUpperCase "hello world")
+#+END_SRC
+------------------------------------------------------------------------------------------------
