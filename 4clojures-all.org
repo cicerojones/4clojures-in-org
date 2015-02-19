@@ -20,7 +20,6 @@
 (= __ true)
 #+END_SRC
 
-
 ** solutions
 
 Solutions:
@@ -7277,7 +7276,7 @@ The
    true)
 
 
-* Finished question 1-45
+* Finished questions 1-45 for drilling
 ** ;; 4Clojure Question 1					      :drill:
   SCHEDULED: <2015-02-08 Sun>
   :PROPERTIES:
