@@ -1,4 +1,4 @@
-* ;; 4Clojure Question 1					      :drill:
+* ;; 4Clojure Question 1 (= __ true)					      :drill:
   SCHEDULED: <2015-02-08 Sun>
   :PROPERTIES:
   :ID:       746711C5-FD14-4F71-9864-A212D5815AB4
@@ -52,7 +52,7 @@ ctzsm's solution:
 (= (clojure-version) "1.4.0")
 #+END_SRC
 
-* ;; 4Clojure Question 2					      :drill:
+* ;; 4Clojure Question 2 prefix arithmetic 			      :drill:
   :PROPERTIES:
   :ID:       3101A095-10A7-4057-A1CF-171916AD50D9
   :END:
@@ -73,7 +73,7 @@ _pcl's solution:
 (- 10 (* 2 3))
 #+END_SRC
 
-* ;; 4Clojure Question 3					      :drill:
+* ;; 4Clojure Question 3 java string methods on clojure strings       :drill:
 
 #+BEGIN_SRC clojure
 ;; Clojure strings are Java strings. This means that you can use any
@@ -105,7 +105,7 @@ lllllllllllll's solution:
 #+END_SRC
 ------------------------------------------------------------------------------------------------
 
-* ;; 4Clojure Question 4
+* ;; 4Clojure Question 4 list fn vs. quoted literal
 
 #+BEGIN_SRC clojure
 ;; Lists can be constructed with either a function or a quoted form.
@@ -120,7 +120,7 @@ Solutions:
 
 :a :b :c
 
-* ;; 4Clojure Question 5
+* ;; 4Clojure Question 5 conj-ing to a list
 
 #+BEGIN_SRC clojure
 ;; When operating on a list, the conj function will return a new list
@@ -141,7 +141,7 @@ Solutions:
 [1 2 3 4]
 #+END_SRC
 
-* ;; 4Clojure Question 6
+* ;; 4Clojure Question 6 vector creation--literal and fn
 
 #+BEGIN_SRC clojure
 ;; Vectors can be constructed several ways. You can compare them with
@@ -156,7 +156,7 @@ Solutions:
 
 :a :b :c
 
-* ;; 4Clojure Question 7
+* ;; 4Clojure Question 7 conj-ing to a vector
 
 #+BEGIN_SRC clojure
 ;; When operating on a Vector, the conj function will return a new
@@ -175,7 +175,7 @@ Solutions:
 
 [1 2 3 4]
 
-* ;; 4Clojure Question 8
+* ;; 4Clojure Question 8 set and clojure.set functions
 
 #+BEGIN_SRC clojure
 ;; Sets are collections of unique values. 
@@ -222,7 +222,7 @@ foantell's solution:
 '#{:a :b :c :d}
 #+END_SRC
 
-* ;; 4Clojure Question 9
+* ;; 4Clojure Question 9 conj-ing to a set
 
 #+BEGIN_SRC clojure
 ;; When operating on a set, the conj function returns a new set with
@@ -272,7 +272,7 @@ aceeca1's solution:
 #+END_SRC 2 3
 ------------------------------------------------------------------------------------------------
 
-* ;; 4Clojure Question 10
+* ;; 4Clojure Question 10 maps and lookup
 
 #+BEGIN_SRC clojure
 ;; Maps store key-value pairs. Both maps and keywords can be used as
@@ -289,7 +289,7 @@ Solutions:
 
 20
 
-* ;; 4Clojure Question 11
+* ;; 4Clojure Question 11 conj-ing to a map
 
 #+BEGIN_SRC clojure
 ;; When operating on a map, the conj function returns a new map with
@@ -309,7 +309,7 @@ Solutions:
 
 [:b 2]
 #+END_SRC]]
-* ;; 4Clojure Question 12
+* ;; 4Clojure Question 12 "All Clojure collections support sequencing"
 
 #+BEGIN_SRC clojure
 ;; All Clojure collections support sequencing. You can operate on
@@ -328,7 +328,7 @@ Solutions:
 
 3
 
-* ;; 4Clojure Question 13
+* ;; 4Clojure Question 13 rest fn of on a sequence
 
 #+BEGIN_SRC clojure
 ;; The rest function will return all the items of a sequence except
@@ -345,7 +345,7 @@ Solutions:
 
 [20 30 40]
 
-* ;; 4Clojure Question 14
+* ;; 4Clojure Question 14 named, unnamed, literal and partial functions
 
 #+BEGIN_SRC clojure
 ;; Clojure has many different ways to create functions. 
@@ -365,7 +365,7 @@ Solutions:
 
 8
 
-* ;; 4Clojure Question 15
+* ;; 4Clojure Question 15 function creation (doubler)
 
 #+BEGIN_SRC clojure
 ;; Write a function which doubles a number. 
@@ -425,7 +425,7 @@ thegeez's solution:
 (fn [n] (+ n n))
 #+END_SRC
 
-* ;; 4Clojure Question 16
+* ;; 4Clojure Question 16 function creation (string greeter)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns a personalized greeting. 
@@ -512,7 +512,7 @@ benizi's solution:
   (str "Hello, " name "!"))
 #+END_SRC
 
-* ;; 4Clojure Question 17
+* ;; 4Clojure Question 17 map-ing a function over a sequence
 
 #+BEGIN_SRC clojure
 ;; The map function takes two arguments: a function (f) and a sequence
@@ -534,7 +534,7 @@ Solutions:
 #+BEGIN_SRC clojure
 #+END_SRC
 
-* 4Clojure Question 18
+* ;; 4Clojure Question 18 filter-ing a sequence with a predicate function
  4Clojure Question 18
 
 #+BEGIN_SRC clojure
@@ -582,7 +582,7 @@ foantell's solution:
 '(6 7)
 #+END_SRC
 
-* ;; 4Clojure Question 19
+* ;; 4Clojure Question 19 function creation (my-last)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the last element in a sequence.
@@ -719,7 +719,7 @@ benizi's solution:
   (reduce (fn [a b] b) nil lst))
 #+END_SRC
 
-* ;; 4Clojure Question 20
+* ;; 4Clojure Question 20 function creation (second-to-last)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the second to last element from a
@@ -854,7 +854,7 @@ benizi's solution:
 
 (comp fnext reverse)
 
-* ;; 4Clojure Question 21
+* ;; 4Clojure Question 21 function creation (my-nth)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the Nth element from a sequence.
@@ -1000,7 +1000,7 @@ benizi's solution:
         (recur (dec n) (first l) (rest l)))))
 #+END_SRC
 
-* ;; 4Clojure Question 22
+* ;; 4Clojure Question 22 function creation (my-count)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the total number of elements in a
@@ -1149,7 +1149,7 @@ benizi's solution:
   (reduce + (map (constantly 1) lst)))
 #+END_SRC
 
-* ;; 4Clojure Question 23
+* ;; 4Clojure Question 23 function creation (my-reverse)
 
 #+BEGIN_SRC clojure
 ;; Write a function which reverses a sequence. Restrictions (please
@@ -1300,7 +1300,7 @@ benizi's solution:
   (reduce conj '() lst))
 #+END_SRC
 
-* ;; 4Clojure Question 24
+* ;; 4Clojure Question 24 function creation (add all numbers in a sequence)
 
 #+BEGIN_SRC clojure;; Write a function which returns the sum of a sequence of numbers.
 ;; Use M-x 4clojure-check-answers when you're done!
@@ -1403,7 +1403,7 @@ jimm's solution:
 #(reduce + %)
 #+END_SRC
 
-* ;; 4Clojure Question 25
+* ;; 4Clojure Question 25 function creation (filter out even numbers)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns only the odd numbers from a
@@ -1505,7 +1505,7 @@ ming's solution:
 filter
 #+END_SRC #(= 1 (rem % 2))
 
-* ;; 4Clojure Question 26
+* [#B] ;; 4Clojure Question 26 function creation (return n Fibonacci numbers)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the first X fibonacci numbers. Use
@@ -1679,7 +1679,7 @@ benizi's solution:
       l)))
 #+END_SRC
 
-* ;; 4Clojure Question 27
+* [#B] ;; 4Clojure Question 27 function creation (palindrome?)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns true if the given sequence is a
@@ -2853,7 +2853,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 35
+* ;; 4Clojure Question 35 let-ing local variables
 
 #+BEGIN_SRC clojure
 ;; Clojure lets you give local names to values using the special
@@ -2978,7 +2978,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 36
+* ;; 4Clojure Question 36 let-ing for correct arithmetic
 
 #+BEGIN_SRC clojure
 ;; Can you bind x, y, and z so that these are all true? 
@@ -3110,7 +3110,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 37
+* ;; 4Clojure Question 37  re-seq and regex syntax
 
 #+BEGIN_SRC clojure
 ;; Regex patterns are supported with a special reader macro. 
@@ -4251,12 +4251,16 @@ The
 
 (= (__ (range 50)) (range 50))
 
-* ;; 4Clojure Question 57
+* ;; 4Clojure Question 57 value returned by a simple recursive fn
+#+BEGIN_SRC clojure
+
+
 ;; A recursive function is a function which calls itself. This is one
 ;; of the fundamental techniques used in functional programming. Use
 ;; M-x 4clojure-check-answers when you're done!
 
 (= __ ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
+#+END_SRC
 
 * ;; 4Clojure Question 58
 ;; Write a function which allows you to create function compositions.
@@ -4336,7 +4340,7 @@ The
 (= (__ count [[1] [1 2] [3] [1 2 3] [2 3]])
    {1 [[1] [3]], 2 [[1 2] [2 3]], 3 [[1 2 3]]})
 
-* ;; 4Clojure Question 64
+* ;; 4Clojure Question 64 use 'reduce' fn
 ;; <a
 ;; href='http://clojuredocs.org/clojure_core/clojure.core/reduce'>Reduce</a>
 ;; takes a 2 argument function and an optional starting value. It then
@@ -4352,6 +4356,9 @@ The
 (=  0 (reduce __ []))
 
 (=  6 (reduce __ 1 [2 3]))
+
+** solution 
++
 
 * ;; 4Clojure Question 65
 ;; Clojure has many sequence types, which act in subtly different
@@ -4446,7 +4453,7 @@ The
 (= (__  "Fools fall for foolish follies.")
    ["fall" "follies" "foolish" "Fools" "for"])
 
-* ;; 4Clojure Question 71
+* ;; 4Clojure Question 71 use 'thread-first' ->
 ;; The -> macro threads an expression x through a variable number of
 ;; forms. First, x is inserted as the second item in the first form,
 ;; making a list of it if it is not a list already. Then the first
