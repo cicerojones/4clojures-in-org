@@ -532,9 +532,10 @@ Solutions:
 '(6 7 8)
 0x89's solution:
 #+BEGIN_SRC clojure
+#+END_SRC
 
-*
-#+END_SRC ;; 4Clojure Question 18
+* 4Clojure Question 18
+ 4Clojure Question 18
 
 #+BEGIN_SRC clojure
 ;; The filter function takes two arguments: a predicate function (f)
@@ -11378,36 +11379,6 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-** ;; 4Clojure Question 43					      :drill:
-   :PROPERTIES:
-   :ID:       7D06965B-B8BA-4A61-BFA6-FC7AC9E3C119
-   :END:
-;; Write a function which reverses the interleave process into x
-;; number of subsequences. 
-
-(= (__ [1 2 3 4 5 6] 2) '((1 3 5) (2 4 6)))
-
-(= (__ (range 9) 3) '((0 3 6) (1 4 7) (2 5 8)))
-
-(= (__ (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))
-
-** ;; 4Clojure Question 44					      :drill:
-   :PROPERTIES:
-   :ID:       C3B5CE2E-81C6-4030-9BC2-627BD7F3E43E
-   :END:
-;; Write a function which can rotate a sequence in either direction.
-;; Use M-x 4clojure-check-answers when you're done!
-
-(= (__ 2 [1 2 3 4 5]) '(3 4 5 1 2))
-
-(= (__ -2 [1 2 3 4 5]) '(4 5 1 2 3))
-
-(= (__ 6 [1 2 3 4 5]) '(2 3 4 5 1))
-
-(= (__ 1 '(:a :b :c)) '(:b :c :a))
-
-(= (__ -4 '(:a :b :c)) '(:c :a :b))
-
 ** ;; 4Clojure Question 45					      :drill:
    :PROPERTIES:
    :ID:       946072A7-4E63-450F-8D40-00A24DAF07E6
@@ -11532,3 +11503,232 @@ The
 <sclojure content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
+* question titles
+  Nothing but the  Elementary    dbyrne  20539  incomple    
+  Truth              
+  Simple Math  Elementary    dbyrne  20158  incomple    
+  Intro to Strings  Elementary    dbyrne  19933  incomple    
+  Intro to Lists  Elementary    dbyrne  18843  incomple    
+  Lists: conj  Elementary    dbyrne  18400  incomple    
+  Intro to Vectors  Elementary    dbyrne  17360  incomple    
+  Vectors: conj  Elementary    dbyrne  17313  incomple    
+  Intro to Sets  Elementary    dbyrne  16932  incomple    
+  Sets: conj  Elementary    dbyrne  16739  incomple    
+  Intro to Maps  Elementary    dbyrne  16337  incomple    
+  Maps: conj  Elementary    dbyrne  16141  incomple    
+  Intro to  Elementary    dbyrne  16020  incomple    
+  Sequences              
+  Sequences: rest  Elementary    dbyrne  15949  incomple    
+  Intro to  Elementary    dbyrne  15775  incomple    
+  Functions              
+  Double Down  Elementary    dbyrne  15594  incomple    
+  Hello World  Elementary    dbyrne  14982  incomple    
+  Sequences: map  Elementary    dbyrne  14895  incomple    
+  Sequences: filter  Elementary    dbyrne  14803  incomple    
+  Last Element  Easy  seqs core-functions  dbyrne  13333  incomple    
+  Penultimate  Easy  seqs  dbyrne  12525  incomple    
+  Element              
+  Nth Element  Easy  seqs core-functions  dbyrne  10982  incomple    
+  Count a Sequence  Easy  seqs core-functions  dbyrne  9949  incomple    
+  Reverse a  Easy  seqs core-functions  dbyrne  8692  incomple    
+  Sequence              
+  Sum It All Up  Easy  seqs  dbyrne  9396  incomple    
+  Find the odd  Easy  seqs  dbyrne  9078  incomple    
+  numbers              
+  Fibonacci  Easy  Fibonacci seqs  dbyrne  6999  incomple    
+  Sequence              
+  Palindrome  Easy  seqs  dbyrne  7311  incomple    
+  Detector              
+  Flatten a  Easy  seqs core-functions  dbyrne  5126  incomple    
+  Sequence              
+  Get the Caps  Easy  strings  dbyrne  6064  incomple    
+  Compress a  Easy  seqs  dbyrne  4979  incomple    
+  Sequence              
+  Pack a Sequence  Easy  seqs  dbyrne  4376  incomple    
+  Duplicate a  Easy  seqs  dbyrne  5460  incomple    
+  Sequence              
+  Replicate a  Easy  seqs  dbyrne  4734  incomple    
+  Sequence              
+  Implement range  Easy  seqs core-functions  dbyrne  5216  incomple    
+  Local bindings  Elementary  syntax  amalloy  11243  incomple    
+  Let it Be  Elementary  math syntax  amalloy  10678  incomple    
+  Regular  Elementary  regex syntax  dbyrne  9815  incomple    
+  Expressions              
+  Maximum value  Easy  core-functions  dbyrne  6700  incomple    
+  Interleave Two  Easy  seqs core-functions  dbyrne  5076  incomple    
+  Seqs              
+  Interpose a Seq  Easy  seqs core-functions  dbyrne  4627  incomple    
+  Drop Every Nth  Easy  seqs  dbyrne  4263  incomple    
+  Item              
+  Factorial Fun  Easy  math  amalloy  5039  incomple    
+  Reverse  Medium  seqs  amalloy  2864  incomple    
+  Interleave              
+  Rotate Sequence  Medium  seqs  dbyrne  2985  incomple    
+  Intro to Iterate  Easy  seqs  dbyrne  4717  incomple    
+  Flipping out  Medium  higher-order-functions  dbyrne  3398  incomple    
+  Contain Yourself  Easy    dbyrne  4838  incomple    
+  Intro to some  Easy    dbyrne  5303  incomple    
+  Split a sequence  Easy  seqs core-functions  dbyrne  4012  incomple    
+  Split by Type  Medium  seqs  dbyrne  2748  incomple    
+  Advanced  Easy  destructuring  dbyrne  3807  incomple    
+  Destructuring              
+  Intro to  Easy  destructuring  amalloy  4162  incomple    
+  Destructuring              
+  Longest  Hard  seqs  dbyrne  1609  incomple    
+  Increasing              
+  Sub-Seq              
+  Partition a  Medium  seqs core-functions  dbyrne  2010  incomple    
+  Sequence              
+  Count Occurrences  Medium  seqs core-functions  dbyrne  2370  incomple    
+  Find Distinct  Medium  seqs core-functions  dbyrne  2167  incomple    
+  Items              
+  Simple Recursion  Elementary  recursion  dbyrne  8159  incomple    
+  Function  Medium  higher-order-functions  dbyrne  2128  incomple    
+  Composition    core-functions          
+  Juxtaposition  Medium  higher-order-functions  dbyrne  2013  incomple    
+      core-functions          
+  Sequence  Medium  seqs core-functions  dbyrne  1370  incomple    
+  Reductions              
+  Map Construction  Easy  core-functions  dbyrne  3280  incomple    
+  Re-implement  Easy  seqs core-functions  amalloy  2727  incomple    
+  Iterate              
+  Group a Sequence  Easy  core-functions  dbyrne  2430  incomple    
+  Intro to Reduce  Elementary  seqs  citizen428  8911  incomple    
+  Black Box Testing  Medium  seqs testing  amalloy  1569  incomple    
+  Greatest Common  Easy    dbyrne  3003  incomple    
+  Divisor              
+  Prime Numbers  Medium  primes  dbyrne  1674  incomple    
+  Recurring Theme  Elementary  recursion  dbyrne  6710  incomple    
+  Merge with a  Medium  core-functions  dbyrne  1366  incomple    
+  Function              
+  Word Sorting  Medium  sorting  fotland  1758  incomple    
+  Rearranging Code:  Elementary    amalloy  6990  incomple    
+  ->              
+  Rearranging Code:  Elementary    amalloy  6507  incomple    
+  ->>              
+  Analyze a  Hard  game  fotland  1124  incomple    
+  Tic-Tac-Toe Board              
+  Filter Perfect  Medium    dbyrne  1589  incomple    
+  Squares              
+  Euler's Totient  Medium    dbyrne  1146  incomple    
+  Function              
+  Intro to  Medium  recursion  dbyrne  1557  incomple    
+  Trampoline              
+  Anagram Finder  Medium    dbyrne  1390  incomple    
+  Reimplement  Medium  core-functions  dbyrne  1069  incomple    
+  Trampoline              
+  Triangle Minimal  Hard  graph-theory  dbyrne  703  incomple    
+  Path              
+  Perfect Numbers  Medium    dbyrne  1441  incomple    
+  Set Intersection  Easy  set-theory  dbyrne  2845  incomple    
+  Word Chains  Hard  seqs  dbyrne  505  incomple    
+  A Half-Truth  Easy    cmeier  3348  incomple    
+  Transitive  Hard  set-theory  dbyrne  573  incomple    
+  Closure              
+  Power Set  Medium  set-theory  peteris  981  incomple    
+  Happy numbers  Medium  math  daviddavis  1115  incomple    
+  Symmetric  Easy  set-theory  dbyrne  2271  incomple    
+  Difference              
+  Graph Tour  Hard  graph-theory  lucas1000001  400  incomple    
+  Cartesian Product  Easy  set-theory  dbyrne  2471  incomple    
+  Graph  Hard  graph-theory  lucas1000001  508  incomple    
+  Connectivity              
+  Read Roman  Hard  strings math  amalloy  734  incomple    
+  numerals              
+  Partially Flatten  Medium  seqs  dbyrne  764  incomple    
+  a Sequence              
+  Game of Life  Hard  game  lucas1000001  437  incomple    
+  To Tree, or not  Easy  trees  dbyrne  1785  incomple    
+  to Tree              
+  Beauty is  Easy  trees  dbyrne  1306  incomple    
+  Symmetry              
+  Pascal's Triangle  Easy    dbyrne  1915  incomple    
+  Equivalence  Medium    drcabana  958  incomple    
+  Classes              
+  Product Digits  Easy  math seqs  jneira  2565  incomple    
+  Least Common  Easy  math  dbyrne  1467  incomple    
+  Multiple              
+  Levenshtein  Hard  seqs  patsp  410  incomple    
+  Distance              
+  intoCamelCase  Medium  strings  amalloy  1309  incomple    
+  Generating  Medium  seqs combinatorics  patsp  615  incomple    
+  k-combinations              
+  Write Roman  Medium  strings math  0x89  687  incomple    
+  Numerals              
+  Identify keys and  Medium  maps seqs  amalloy  924  incomple    
+  values              
+  Number Maze  Hard  numbers  lucas1000001  428  incomple    
+  Simple closures  Easy  higher-order-functions  amalloy  2655  incomple    
+      math          
+  Lazy Searching  Medium  seqs sorting  amalloy  798  incomple    
+  Sequence of  Medium  seqs  mlni  825  incomple    
+  pronunciations              
+  Crossword puzzle  Hard  game  mlni  312  incomple    
+  Sequs Horribilis  Medium  seqs  ghoseb  465  incomple    
+  Making Data Dance  Hard  types  amcnamara  351  incomple    
+  Global take-while  Medium  seqs  amalloy  735  incomple    
+      higher-order-functions          
+  The Balance of N  Medium  math  amcnamara  969  incomple    
+  Prime Sandwich  Medium  math  amcnamara  610  incomple    
+  For Science!  Hard  game  amcnamara  353  incomple    
+  Re-implement Map  Easy  core-seqs  semisight  1859  incomple    
+  Win at  Hard  game  shockbob  362  incomple    
+  Tic-Tac-Toe              
+  Sum of square of  Easy  math  danilo  1815  incomple    
+  digits              
+  Universal  Medium  functions  mlni  589  incomple    
+  Computation              
+  Engine              
+  Read a binary  Easy    mikera  2310  incomple    
+  number              
+  Analyze Reversi  Hard  game  shockbob  232  incomple    
+  Gus' Quinundrum  Hard  logic fun brain-teaser  amcnamara  304  incomple    
+  Through the  Easy  fun brain-teaser  amcnamara  2163  incomple    
+  Looking Class              
+  Love Triangle  Hard  search data-juggling  amcnamara  169  incomple    
+  Recognize Playing  Easy  strings game  amalloy  1725  incomple    
+  Cards              
+  Tree reparenting  Hard  tree  chouser  236  incomple    
+  Sum Some Set  Medium  math  amcnamara  481  incomple    
+  Subsets              
+  Insert between  Medium  seqs core-functions  srid  708  incomple    
+  two items              
+  A nil key  Elementary  maps  goranjovic  5968  incomple    
+  Infix Calculator  Easy  higher-order-functions  fdaoud  2107  incomple    
+      math          
+  Digits and bases  Medium  math  goranjovic  898  incomple    
+  Squares Squared  Hard  data-juggling  amcnamara  211  incomple    
+  Veitch, Please!  Hard  math circuit-design  amcnamara  140  incomple    
+  Tricky card games  Medium  game cards  amalloy  457  incomple    
+  dot product  Easy  seqs math  bloop  2267  incomple    
+  Oscilrate  Medium  sequences  bloop  818  incomple    
+  For the win  Elementary  core-functions seqs  amalloy  5454  incomple    
+  Trees into tables  Easy  seqs maps  amalloy  1247  incomple    
+  Pascal's  Easy  seqs  narvius  1341  incomple    
+  Trapezoid              
+  The Big Divide  Medium  math  goranjovic  573  incomple    
+  Palindromic  Medium  seqs math  maximental  348  incomple    
+  Numbers              
+  Latin Square  Hard  data-analysis math  maximental  139  incomple    
+  Slicing              
+  Pairwise Disjoint  Easy  set-theory  maximental  1163  incomple    
+  Sets              
+  Map Defaults  Elementary  seqs  jaycfields  4250  incomple    
+  Indexing  Easy  seqs  jaycfields  1955  incomple    
+  Sequences              
+  Decurry  Medium  partial-functions  amcnamara  759  incomple    
+  Subset and  Elementary  set-theory  hangkous  4878  incomple    
+  Superset              
+  Logical falsity  Elementary  logic  hangkous  5236  incomple    
+  and truth              
+  Language of a DFA  Hard  automata seqs  daowen  199  incomple    
+  Comparisons  Easy    daowen  2933  incomple    
+  Infinite Matrix  Medium  seqs recursion math  maximental  346  incomple    
+  Intervals  Medium    aiba  521  incomple    
+  Intro to  Easy  Destructuring  hangkous  1419  incomple    
+  Destructuring 2              
+  Balancing  Medium  parsing  daowen  441  incomple    
+  Brackets              
+  Best Hand  Hard  strings game  toolkit  216  incomple    
+  Parentheses...  Medium  math combinatorics  djtrack16  48  incomple    
+  Again              
