@@ -1,4 +1,4 @@
-* ;; 4Clojure Question 1 (= __ true)					      :drill:
+* 4Clojure Question 1 (= __ true)					      :drill:
   SCHEDULED: <2015-02-08 Sun>
   :PROPERTIES:
   :ID:       746711C5-FD14-4F71-9864-A212D5815AB4
@@ -52,7 +52,7 @@ ctzsm's solution:
 (= (clojure-version) "1.4.0")
 #+END_SRC
 
-* ;; 4Clojure Question 2 prefix arithmetic 			      :drill:
+* 4Clojure Question 2 prefix arithmetic 			      :drill:
   :PROPERTIES:
   :ID:       3101A095-10A7-4057-A1CF-171916AD50D9
   :END:
