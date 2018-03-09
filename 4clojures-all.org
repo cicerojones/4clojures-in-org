@@ -1494,7 +1494,7 @@ ming's solution:
 filter
 #+END_SRC #(= 1 (rem % 2))
 
-* [#B] ;; 4Clojure Question 26 function creation (return n Fibonacci numbers)
+* 4Clojure Question 26 function creation (return n Fibonacci numbers)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the first X fibonacci numbers. Use
@@ -1668,7 +1668,7 @@ benizi's solution:
       l)))
 #+END_SRC
 
-* [#B] ;; 4Clojure Question 27 function creation (palindrome?)
+* 4Clojure Question 27 function creation (palindrome?)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns true if the given sequence is a
@@ -1821,7 +1821,7 @@ benizi's solution:
       :else false)))
 #+END_SRC
 
-* 4Clojure Question 28
+* 4Clojure Question 28 function creation (flattens a sequence)
 
 #+BEGIN_SRC clojure
 ;; Write a function which flattens a sequence. Restrictions (please
@@ -2044,7 +2044,7 @@ benizi's solution:
           (recur r (conj acc f))))))
 #+END_SRC)
 
-* 4Clojure Question 29
+* 4Clojure Question 29 function creation (takes a string and returns a new string)
 
 #+BEGIN_SRC clojure
 ;; Write a function which takes a string and returns a new string
@@ -2177,7 +2177,7 @@ benizi's solution:
 #(apply str (re-seq #"[A-Z]" %))
 #+END_SRC
 
-* 4Clojure Question 30
+* 4Clojure Question 30 function creation (removes consecutive duplicates from a)
 
 #+BEGIN_SRC clojure
 ;; Write a function which removes consecutive duplicates from a
@@ -2318,7 +2318,7 @@ benizi's solution:
 #(partition-by identity %)
 #+END_SRC
 
-* 4Clojure Question 31
+* 4Clojure Question 31 function creation (packs consecutive duplicates into sub-lists)
 
 #+BEGIN_SRC clojure
 ;; Write a function which packs consecutive duplicates into sub-lists.
@@ -2404,7 +2404,7 @@ lllllllllllll's solution:
         (conj a [b]))) [] s)
 #+END_SRC)
 
-* 4Clojure Question 32
+* 4Clojure Question 32 function creation (duplicates each element of a sequence)
 
 #+BEGIN_SRC clojure
 ;; Write a function which duplicates each element of a sequence. Use
@@ -2547,7 +2547,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* 4Clojure Question 33
+* 4Clojure Question 33 function creation (replicates each element of a sequence)
 
 #+BEGIN_SRC clojure
 ;; Write a function which replicates each element of a sequence a
@@ -2688,7 +2688,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* 4Clojure Question 34
+* 4Clojure Question 34 function creation (creates a list of all integers in a given...)
 
 #+BEGIN_SRC clojure
 ;; Write a function which creates a list of all integers in a given
@@ -3099,7 +3099,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* 4Clojure Question 37  re-seq and regex syntax
+* 4Clojure Question 37 re-seq and regex syntax
 
 #+BEGIN_SRC clojure
 ;; Regex patterns are supported with a special reader macro. 
@@ -3219,7 +3219,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* 4Clojure Question 38
+* 4Clojure Question 38 function creation (takes a variable number of parameters)
 
 #+BEGIN_SRC clojure
 ;; Write a function which takes a variable number of parameters and
