@@ -94,7 +94,7 @@ lllllllllllll's solution:
 #+END_SRC
 ------------------------------------------------------------------------------------------------
 
-* ;; 4Clojure Question 4 list fn vs. quoted literal
+* 4Clojure Question 4 list fn vs. quoted literal
 
 #+BEGIN_SRC clojure
 ;; Lists can be constructed with either a function or a quoted form.
@@ -109,7 +109,7 @@ Solutions:
 
 :a :b :c
 
-* ;; 4Clojure Question 5 conj-ing to a list
+* 4Clojure Question 5 conj-ing to a list
 
 #+BEGIN_SRC clojure
 ;; When operating on a list, the conj function will return a new list
@@ -130,7 +130,7 @@ Solutions:
 [1 2 3 4]
 #+END_SRC
 
-* ;; 4Clojure Question 6 vector creation--literal and fn
+* 4Clojure Question 6 vector creation--literal and fn
 
 #+BEGIN_SRC clojure
 ;; Vectors can be constructed several ways. You can compare them with
@@ -145,7 +145,7 @@ Solutions:
 
 :a :b :c
 
-* ;; 4Clojure Question 7 conj-ing to a vector
+* 4Clojure Question 7 conj-ing to a vector
 
 #+BEGIN_SRC clojure
 ;; When operating on a Vector, the conj function will return a new
@@ -164,7 +164,7 @@ Solutions:
 
 [1 2 3 4]
 
-* ;; 4Clojure Question 8 set and clojure.set functions
+* 4Clojure Question 8 set and clojure.set functions
 
 #+BEGIN_SRC clojure
 ;; Sets are collections of unique values. 
@@ -211,7 +211,7 @@ foantell's solution:
 '#{:a :b :c :d}
 #+END_SRC
 
-* ;; 4Clojure Question 9 conj-ing to a set
+* 4Clojure Question 9 conj-ing to a set
 
 #+BEGIN_SRC clojure
 ;; When operating on a set, the conj function returns a new set with
@@ -261,7 +261,7 @@ aceeca1's solution:
 #+END_SRC 2 3
 ------------------------------------------------------------------------------------------------
 
-* ;; 4Clojure Question 10 maps and lookup
+* 4Clojure Question 10 maps and lookup
 
 #+BEGIN_SRC clojure
 ;; Maps store key-value pairs. Both maps and keywords can be used as
@@ -278,7 +278,7 @@ Solutions:
 
 20
 
-* ;; 4Clojure Question 11 conj-ing to a map
+* 4Clojure Question 11 conj-ing to a map
 
 #+BEGIN_SRC clojure
 ;; When operating on a map, the conj function returns a new map with
@@ -298,7 +298,7 @@ Solutions:
 
 [:b 2]
 #+END_SRC]]
-* ;; 4Clojure Question 12 "All Clojure collections support sequencing"
+* 4Clojure Question 12 "All Clojure collections support sequencing"
 
 #+BEGIN_SRC clojure
 ;; All Clojure collections support sequencing. You can operate on
@@ -317,7 +317,7 @@ Solutions:
 
 3
 
-* ;; 4Clojure Question 13 rest fn of on a sequence
+* 4Clojure Question 13 rest fn of on a sequence
 
 #+BEGIN_SRC clojure
 ;; The rest function will return all the items of a sequence except
@@ -334,7 +334,7 @@ Solutions:
 
 [20 30 40]
 
-* ;; 4Clojure Question 14 named, unnamed, literal and partial functions
+* 4Clojure Question 14 named, unnamed, literal and partial functions
 
 #+BEGIN_SRC clojure
 ;; Clojure has many different ways to create functions. 
@@ -354,7 +354,7 @@ Solutions:
 
 8
 
-* ;; 4Clojure Question 15 function creation (doubler)
+* 4Clojure Question 15 function creation (doubler)
 
 #+BEGIN_SRC clojure
 ;; Write a function which doubles a number. 
@@ -414,7 +414,7 @@ thegeez's solution:
 (fn [n] (+ n n))
 #+END_SRC
 
-* ;; 4Clojure Question 16 function creation (string greeter)
+* 4Clojure Question 16 function creation (string greeter)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns a personalized greeting. 
@@ -501,7 +501,7 @@ benizi's solution:
   (str "Hello, " name "!"))
 #+END_SRC
 
-* ;; 4Clojure Question 17 map-ing a function over a sequence
+* 4Clojure Question 17 map-ing a function over a sequence
 
 #+BEGIN_SRC clojure
 ;; The map function takes two arguments: a function (f) and a sequence
@@ -523,7 +523,7 @@ Solutions:
 #+BEGIN_SRC clojure
 #+END_SRC
 
-* ;; 4Clojure Question 18 filter-ing a sequence with a predicate function
+* 4Clojure Question 18 filter-ing a sequence with a predicate function
  4Clojure Question 18
 
 #+BEGIN_SRC clojure
@@ -571,7 +571,7 @@ foantell's solution:
 '(6 7)
 #+END_SRC
 
-* ;; 4Clojure Question 19 function creation (my-last)
+* 4Clojure Question 19 function creation (my-last)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the last element in a sequence.
@@ -708,7 +708,7 @@ benizi's solution:
   (reduce (fn [a b] b) nil lst))
 #+END_SRC
 
-* ;; 4Clojure Question 20 function creation (second-to-last)
+* 4Clojure Question 20 function creation (second-to-last)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the second to last element from a
@@ -843,7 +843,7 @@ benizi's solution:
 
 (comp fnext reverse)
 
-* ;; 4Clojure Question 21 function creation (my-nth)
+* 4Clojure Question 21 function creation (my-nth)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the Nth element from a sequence.
@@ -989,7 +989,7 @@ benizi's solution:
         (recur (dec n) (first l) (rest l)))))
 #+END_SRC
 
-* ;; 4Clojure Question 22 function creation (my-count)
+* 4Clojure Question 22 function creation (my-count)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns the total number of elements in a
@@ -1138,7 +1138,7 @@ benizi's solution:
   (reduce + (map (constantly 1) lst)))
 #+END_SRC
 
-* ;; 4Clojure Question 23 function creation (my-reverse)
+* 4Clojure Question 23 function creation (my-reverse)
 
 #+BEGIN_SRC clojure
 ;; Write a function which reverses a sequence. Restrictions (please
@@ -1289,7 +1289,7 @@ benizi's solution:
   (reduce conj '() lst))
 #+END_SRC
 
-* ;; 4Clojure Question 24 function creation (add all numbers in a sequence)
+* 4Clojure Question 24 function creation (add all numbers in a sequence)
 
 #+BEGIN_SRC clojure;; Write a function which returns the sum of a sequence of numbers.
 ;; Use M-x 4clojure-check-answers when you're done!
@@ -1392,7 +1392,7 @@ jimm's solution:
 #(reduce + %)
 #+END_SRC
 
-* ;; 4Clojure Question 25 function creation (filter out even numbers)
+* 4Clojure Question 25 function creation (filter out even numbers)
 
 #+BEGIN_SRC clojure
 ;; Write a function which returns only the odd numbers from a
@@ -1821,7 +1821,7 @@ benizi's solution:
       :else false)))
 #+END_SRC
 
-* ;; 4Clojure Question 28
+* 4Clojure Question 28
 
 #+BEGIN_SRC clojure
 ;; Write a function which flattens a sequence. Restrictions (please
@@ -2044,7 +2044,7 @@ benizi's solution:
           (recur r (conj acc f))))))
 #+END_SRC)
 
-* ;; 4Clojure Question 29
+* 4Clojure Question 29
 
 #+BEGIN_SRC clojure
 ;; Write a function which takes a string and returns a new string
@@ -2177,7 +2177,7 @@ benizi's solution:
 #(apply str (re-seq #"[A-Z]" %))
 #+END_SRC
 
-* ;; 4Clojure Question 30
+* 4Clojure Question 30
 
 #+BEGIN_SRC clojure
 ;; Write a function which removes consecutive duplicates from a
@@ -2318,7 +2318,7 @@ benizi's solution:
 #(partition-by identity %)
 #+END_SRC
 
-* ;; 4Clojure Question 31
+* 4Clojure Question 31
 
 #+BEGIN_SRC clojure
 ;; Write a function which packs consecutive duplicates into sub-lists.
@@ -2404,7 +2404,7 @@ lllllllllllll's solution:
         (conj a [b]))) [] s)
 #+END_SRC)
 
-* ;; 4Clojure Question 32
+* 4Clojure Question 32
 
 #+BEGIN_SRC clojure
 ;; Write a function which duplicates each element of a sequence. Use
@@ -2547,7 +2547,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 33
+* 4Clojure Question 33
 
 #+BEGIN_SRC clojure
 ;; Write a function which replicates each element of a sequence a
@@ -2688,7 +2688,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 34
+* 4Clojure Question 34
 
 #+BEGIN_SRC clojure
 ;; Write a function which creates a list of all integers in a given
@@ -2842,7 +2842,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 35 let-ing local variables
+* 4Clojure Question 35 let-ing local variables
 
 #+BEGIN_SRC clojure
 ;; Clojure lets you give local names to values using the special
@@ -2967,7 +2967,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 36 let-ing for correct arithmetic
+* 4Clojure Question 36 let-ing for correct arithmetic
 
 #+BEGIN_SRC clojure
 ;; Can you bind x, y, and z so that these are all true? 
@@ -3099,7 +3099,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 37  re-seq and regex syntax
+* 4Clojure Question 37  re-seq and regex syntax
 
 #+BEGIN_SRC clojure
 ;; Regex patterns are supported with a special reader macro. 
@@ -3219,7 +3219,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 38
+* 4Clojure Question 38
 
 #+BEGIN_SRC clojure
 ;; Write a function which takes a variable number of parameters and
@@ -3359,7 +3359,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 39
+* 4Clojure Question 39
 
 #+BEGIN_SRC clojure
 ;; Write a function which takes two sequences and returns the first
@@ -3514,7 +3514,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 40
+* 4Clojure Question 40
 ;; Write a function which separates the items of a sequence by an
 ;; arbitrary value. Restrictions (please don't use these function(s)):
 ;; interpose Use M-x 4clojure-check-answers when you're done!
@@ -3648,7 +3648,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 41
+* 4Clojure Question 41
 ;; Write a function which drops every Nth item from a sequence. Use
 ;; M-x 4clojure-check-answers when you're done!
 
@@ -3820,7 +3820,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 42
+* 4Clojure Question 42
 ;; Write a function which calculates factorials. 
 
 (= (__ 1) 1)
@@ -3971,7 +3971,7 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* ;; 4Clojure Question 43
+* 4Clojure Question 43
 ;; Write a function which reverses the interleave process into x
 ;; number of subsequences. 
 
@@ -3981,7 +3981,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 
 (= (__ (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))
 
-* ;; 4Clojure Question 44
+* 4Clojure Question 44
 ;; Write a function which can rotate a sequence in either direction.
 ;; Use M-x 4clojure-check-answers when you're done!
 
@@ -3995,7 +3995,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 
 (= (__ -4 '(:a :b :c)) '(:c :a :b))
 
-* ;; 4Clojure Question 45
+* 4Clojure Question 45
 ;; The iterate function can be used to produce an infinite lazy
 ;; sequence. Use M-x 4clojure-check-answers when you're done!
 
@@ -4115,7 +4115,7 @@ The
 #+END_SRC
 <sclojure content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
-* ;; 4Clojure Question 46
+* 4Clojure Question 46
 ;; Write a higher-order function which flips the order of the
 ;; arguments of an input function. 
 
@@ -4144,7 +4144,7 @@ The
 
 (not (contains? '(1 2 4) __))
  
-* ;; 4Clojure Question 48
+* 4Clojure Question 48
 ;; The some function takes a predicate function and a collection. It
 ;; returns the first logical true value of (predicate x) where x is an
 ;; item in the collection. 
@@ -4155,7 +4155,7 @@ The
 
 
 *
-* ;; 4Clojure Question 49
+* 4Clojure Question 49
 ;; Write a function which will split a sequence into two parts.
 ;; Restrictions (please don't use these function(s)): split-at 
 
@@ -4177,19 +4177,19 @@ The
 
 (= (set (__ [[1 2] :a [3 4] 5 6 :b])) #{[[1 2] [3 4]] [:a :b] [5 6]})
 
-* ;; 4Clojure Question 51
+* 4Clojure Question 51
 ;; Here is an example of some more sophisticated destructuring. Use
 ;; M-x 4clojure-check-answers when you're done!
 
 (= [1 2 [3 4 5] [1 2 3 4 5]] (let [[a b & c :as d] __] [a b c d]))
 
-* ;; 4Clojure Question 52
+* 4Clojure Question 52
 ;; Let bindings and function parameter lists support destructuring.
 ;; Use M-x 4clojure-check-answers when you're done!
 
 (= [2 4] (let [[a b c d e f g] (range)] __))
 
-* ;; 4Clojure Question 53
+* 4Clojure Question 53
 ;; Given a vector of integers, find the longest consecutive
 ;; sub-sequence of increasing numbers. If two sub-sequences have the
 ;; same length, use the one that occurs first. An increasing
@@ -4203,7 +4203,7 @@ The
 
 (= (__ [7 6 5 4]) [])
 
-* ;; 4Clojure Question 54
+* 4Clojure Question 54
 ;; Write a function which returns a sequence of lists of x items each.
 ;; Lists of less than x items should not be returned. Restrictions
 ;; (please don't use these function(s)): partition, partition-all Use
@@ -4215,7 +4215,7 @@ The
 
 (= (__ 3 (range 8)) '((0 1 2) (3 4 5)))
 
-* ;; 4Clojure Question 55
+* 4Clojure Question 55
 ;; Write a function which returns a map containing the number of
 ;; occurences of each distinct item in a sequence. Restrictions
 ;; (please don't use these function(s)): frequencies 
@@ -4226,7 +4226,7 @@ The
 
 (= (__ '([1 2] [1 3] [1 3])) {[1 2] 1, [1 3] 2})
 
-* ;; 4Clojure Question 56
+* 4Clojure Question 56
 ;; Write a function which removes the duplicates from a sequence.
 ;; Order of the items must be maintained. Restrictions (please don't
 ;; use these function(s)): distinct Use M-x 4clojure-check-answers
@@ -4240,7 +4240,7 @@ The
 
 (= (__ (range 50)) (range 50))
 
-* ;; 4Clojure Question 57 value returned by a simple recursive fn
+* 4Clojure Question 57 value returned by a simple recursive fn
 #+BEGIN_SRC clojure
 
 
@@ -4251,7 +4251,7 @@ The
 (= __ ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
 #+END_SRC
 
-* ;; 4Clojure Question 58
+* 4Clojure Question 58
 ;; Write a function which allows you to create function compositions.
 ;; The parameter list should take a variable number of functions, and
 ;; create a function applies them from right-to-left. Restrictions
@@ -4265,7 +4265,7 @@ The
 
 (= "HELLO" ((__ #(.toUpperCase %) #(apply str %) take) 5 "hello world"))
 
-* ;; 4Clojure Question 59
+* 4Clojure Question 59
 ;; Take a set of functions and return a new function that takes a
 ;; variable number of arguments and returns a sequence containing the
 ;; result of applying each function left-to-right to the argument
@@ -4278,7 +4278,7 @@ The
 
 (= [2 6 4] ((__ :a :c :b) {:a 2, :b 4, :c 6, :d 8 :e 10}))
 
-* ;; 4Clojure Question 60
+* 4Clojure Question 60
 ;; Write a function which behaves like reduce, but returns each
 ;; intermediate value of the reduction. Your function must accept
 ;; either two or three arguments, and the return sequence must be
@@ -4291,7 +4291,7 @@ The
 
 (= (last (__ * 2 [3 4 5])) (reduce * 2 [3 4 5]) 120)
 
-* ;; 4Clojure Question 61
+* 4Clojure Question 61
 ;; Write a function which takes a vector of keys and a vector of
 ;; values and constructs a map from them. Restrictions (please don't
 ;; use these function(s)): zipmap 
@@ -4302,7 +4302,7 @@ The
 
 (= (__ [:foo :bar] ["foo" "bar" "baz"]) {:foo "foo", :bar "bar"})
 
-* ;; 4Clojure Question 62
+* 4Clojure Question 62
 ;; Given a side-effect free function f and an initial value x write a
 ;; function which returns an infinite lazy sequence of x, (f x), (f (f
 ;; x)), (f (f (f x))), etc. Restrictions (please don't use these
@@ -4314,7 +4314,7 @@ The
 
 (= (take 9 (__ #(inc (mod % 3)) 1)) (take 9 (cycle [1 2 3])))
 
-* ;; 4Clojure Question 63
+* 4Clojure Question 63
 ;; Given a function f and a sequence s, write a function which returns
 ;; a map. The keys should be the values of f applied to each item
 ;; in s. The value at each key should be a vector of corresponding
@@ -4329,7 +4329,7 @@ The
 (= (__ count [[1] [1 2] [3] [1 2 3] [2 3]])
    {1 [[1] [3]], 2 [[1 2] [2 3]], 3 [[1 2 3]]})
 
-* ;; 4Clojure Question 64 use 'reduce' fn
+* 4Clojure Question 64 use 'reduce' fn
 ;; <a
 ;; href='http://clojuredocs.org/clojure_core/clojure.core/reduce'>Reduce</a>
 ;; takes a 2 argument function and an optional starting value. It then
@@ -4349,7 +4349,7 @@ The
 ** solution 
 +
 
-* ;; 4Clojure Question 65
+* 4Clojure Question 65
 ;; Clojure has many sequence types, which act in subtly different
 ;; ways. The core functions typically convert them into a uniform
 ;; "sequence" type and work with them that way, but it can be
@@ -4373,7 +4373,7 @@ The
 
 (= [:map :set :vector :list] (map __ [{} #{} [] ()]))
 
-* ;; 4Clojure Question 66
+* 4Clojure Question 66
 ;; Given two integers, write a function which returns the greatest
 ;; common divisor. Use M-x 4clojure-check-answers when you're done!
 
@@ -4385,7 +4385,7 @@ The
 
 (= (__ 1023 858) 33)
 
-* ;; 4Clojure Question 67
+* 4Clojure Question 67
 ;; Write a function which returns the first x number of prime numbers.
 ;; Use M-x 4clojure-check-answers when you're done!
 
@@ -4395,7 +4395,7 @@ The
 
 (= (last (__ 100)) 541)
 
-* ;; 4Clojure Question 68
+* 4Clojure Question 68
 ;; Clojure only has one non-stack-consuming looping construct: recur.
 ;; Either a function or a loop can be used as the recursion point.
 ;; Either way, recur rebinds the bindings of the recursion point to
@@ -4410,7 +4410,7 @@ The
       (recur (dec x) (conj result (+ 2 x)))
       result)))
 
-* ;; 4Clojure Question 69
+* 4Clojure Question 69
 ;; Write a function which takes a function f and a variable number of
 ;; maps. Your function should return a map that consists of the rest
 ;; of the maps conj-ed onto the first. If a key occurs in more than
@@ -4428,7 +4428,7 @@ The
 (= (__ concat {:a [3], :b [6]} {:a [4 5], :c [8 9]} {:b [7]})
    {:a [3 4 5], :b [6 7], :c [8 9]})
 
-* ;; 4Clojure Question 70
+* 4Clojure Question 70
 ;; Write a function that splits a sentence up into a sorted list of
 ;; words. Capitalization should not affect sort order and punctuation
 ;; should be ignored. Use M-x 4clojure-check-answers when you're done!
@@ -4442,7 +4442,7 @@ The
 (= (__  "Fools fall for foolish follies.")
    ["fall" "follies" "foolish" "Fools" "for"])
 
-* ;; 4Clojure Question 71 use 'thread-first' ->
+* 4Clojure Question 71 use 'thread-first' ->
 ;; The -> macro threads an expression x through a variable number of
 ;; forms. First, x is inserted as the second item in the first form,
 ;; making a list of it if it is not a list already. Then the first
@@ -4454,7 +4454,7 @@ The
    (-> [2 5 4 1 3 6] (reverse) (rest) (sort) (__))
    5)
 
-* ;; 4Clojure Question 72
+* 4Clojure Question 72
 ;; The ->> macro threads an expression x through a variable number of
 ;; forms. First, x is inserted as the last item in the first form,
 ;; making a list of it if it is not a list already. Then the first
@@ -4467,7 +4467,7 @@ The
    (->> [2 5 4 1 3 6] (drop 2) (take 3) (map inc) (__))
    11)
 
-* ;; 4Clojure Question 73
+* 4Clojure Question 73
 ;; A <a
 ;; href="http://en.wikipedia.org/wiki/Tic-tac-toe">tic-tac-toe</a>
 ;; board is represented by a two dimensional vector. X is represented
@@ -4505,7 +4505,7 @@ The
             [:x :o :x]
             [:o :x :o]]))
 
-* ;; 4Clojure Question 74
+* 4Clojure Question 74
 ;; Given a string of comma separated integers, write a function which
 ;; returns a new comma separated string that only contains the numbers
 ;; which are perfect squares. 
@@ -4514,7 +4514,7 @@ The
 
 (= (__ "15,16,25,36,37") "16,25,36")
 
-* ;; 4Clojure Question 75
+* 4Clojure Question 75
 ;; Two numbers are coprime if their greatest common divisor equals 1.
 ;; Euler's totient function f(x) is defined as the number of positive
 ;; integers less than x which are coprime to x. The special case f(1)
@@ -4529,7 +4529,7 @@ The
 
 (= (__ 99) 60)
 
-* ;; 4Clojure Question 76
+* 4Clojure Question 76
 ;; The trampoline function takes a function f and a variable number of
 ;; parameters. Trampoline calls f with any parameters that were
 ;; supplied. If f returns a function, trampoline calls that function
@@ -4547,7 +4547,7 @@ The
                    #(foo x (+ 2 y))))]
      (trampoline foo [] 1)))
 
-* ;; 4Clojure Question 77
+* 4Clojure Question 77
 ;; Write a function which finds all the anagrams in a vector of words.
 ;; A word x is an anagram of word y if all the letters in x can be
 ;; rearranged in a different order to form y. Your function should
@@ -4562,7 +4562,7 @@ The
 (= (__ ["veer" "lake" "item" "kale" "mite" "ever"])
    #{#{"veer" "ever"} #{"lake" "kale"} #{"mite" "item"}})
 
-* ;; 4Clojure Question 78
+* 4Clojure Question 78
 ;; Reimplement the function described in <a href="76"> "Intro to
 ;; Trampoline"</a>. Restrictions (please don't use these function(s)):
 ;; trampoline Use M-x 4clojure-check-answers when you're done!
@@ -4578,7 +4578,7 @@ The
     (map (partial __ my-even?) (range 6)))
   [true false true false true false])
 
-* ;; 4Clojure Question 79
+* 4Clojure Question 79
 ;; Write a function which calculates the sum of the minimal path
 ;; through a triangle. The triangle is represented as a collection of
 ;; vectors. The path should start at the top of the triangle and move
@@ -4597,7 +4597,7 @@ The
         [4 6 6 7 8]
        [5 7 3 5 1 4]))) ; 3->4->3->2->7->1
 
-* ;; 4Clojure Question 80
+* 4Clojure Question 80
 ;; A number is "perfect" if the sum of its divisors equal the number
 ;; itself. 6 is a perfect number because 1+2+3=6. Write a function
 ;; which returns true for perfect numbers and false otherwise. 
@@ -4612,7 +4612,7 @@ The
 
 (= (__ 8128) true)
 
-* ;; 4Clojure Question 81
+* 4Clojure Question 81
 ;; Write a function which returns the intersection of two sets. The
 ;; intersection is the sub-set of items that each set has in common.
 ;; Restrictions (please don't use these function(s)): intersection Use
@@ -4624,7 +4624,7 @@ The
 
 (= (__ #{:a :b :c :d} #{:c :e :a :f :d}) #{:a :c :d})
 
-* ;; 4Clojure Question 82
+* 4Clojure Question 82
 ;; A word chain consists of a set of words ordered so that each word
 ;; differs by only one letter from the words directly before and after
 ;; it. The one letter difference can be either an insertion, a
@@ -4646,7 +4646,7 @@ The
 
 (= false (__ #{"share" "hares" "hare" "are"}))
 
-* ;; 4Clojure Question 83
+* 4Clojure Question 83
 ;; Write a function which takes a variable number of booleans. Your
 ;; function should return true if some of the parameters are true, but
 ;; not all of the parameters are true. Otherwise your function should
@@ -4664,7 +4664,7 @@ The
 
 (= true (__ true true true false))
 
-* ;; 4Clojure Question 84
+* 4Clojure Question 84
 ;; Write a function which generates the <a
 ;; href="http://en.wikipedia.org/wiki/Transitive_closure">transitive
 ;; closure</a> of a <a
@@ -4687,7 +4687,7 @@ The
      #{["father" "son"] ["father" "grandson"]
        ["uncle" "cousin"] ["son" "grandson"]}))
 
-* ;; 4Clojure Question 85
+* 4Clojure Question 85
 ;; Write a function which generates the <a
 ;; href="http://en.wikipedia.org/wiki/Power_set">power set</a> of a
 ;; given set. The power set of a set x is the set of all subsets of x,
@@ -4702,7 +4702,7 @@ The
 
 (= (count (__ (into #{} (range 10)))) 1024)
 
-* ;; 4Clojure Question 86
+* 4Clojure Question 86
 ;; Happy numbers are positive integers that follow a particular
 ;; formula: take each individual digit, square it, and then sum the
 ;; squares to get a new number. Repeat with the new number and
@@ -4719,7 +4719,7 @@ The
 
 (= (__ 3) false)
 
-* ;; 4Clojure Question 87
+* 4Clojure Question 87
 ;; Happy numbers are positive integers that follow a particular
 ;; formula: take each individual digit, square it, and then sum the
 ;; squares to get a new number. Repeat with the new number and
@@ -4736,7 +4736,7 @@ The
 
 (= (__ 3) false)
 
-* ;; 4Clojure Question 88
+* 4Clojure Question 88
 ;; Write a function which returns the symmetric difference of two
 ;; sets. The symmetric difference is the set of items belonging to one
 ;; but not both of the two sets. 
@@ -4749,7 +4749,7 @@ The
 
 (= (__ #{[1 2] [2 3]} #{[2 3] [3 4]}) #{[1 2] [3 4]})
 
-* ;; 4Clojure Question 89
+* 4Clojure Question 89
 ;; Starting with a graph you must write a function that returns true
 ;; if it is possible to make a tour of the graph in which every edge
 ;; is visited exactly once.<br/><br/>The graph is represented by a
@@ -4773,7 +4773,7 @@ The
 
 (= false (__ [[1 2] [2 3] [2 4] [2 5]]))
 
-* ;; 4Clojure Question 90
+* 4Clojure Question 90
 ;; Write a function which calculates the <a
 ;; href="http://en.wikipedia.org/wiki/Cartesian_product"> Cartesian
 ;; product</a> of two sets. 
@@ -4789,7 +4789,7 @@ The
 (= 300 (count (__ (into #{} (range 10))
                   (into #{} (range 30)))))
 
-* ;; 4Clojure Question 91
+* 4Clojure Question 91
 ;; Given a graph, determine whether the graph is connected. A
 ;; connected graph is such that a path exists between any two given
 ;; nodes.<br/><br/>-Your function must return true if the graph is
@@ -4815,7 +4815,7 @@ The
 (= true (__ #{[:a :b] [:b :c] [:c :d]
               [:x :y] [:d :a] [:b :e] [:x :a]}))
 
-* ;; 4Clojure Question 92
+* 4Clojure Question 92
 ;; Roman numerals are easy to recognize, but not everyone knows all
 ;; the rules necessary to work with them. Write a function to parse a
 ;; Roman-numeral string and return the number it represents. <br /><br
@@ -4835,7 +4835,7 @@ The
 (= 48 (__ "XLVIII"))
 
 
-* ;; 4Clojure Question 93
+* 4Clojure Question 93
 ;; Write a function which flattens any nested combination of
 ;; sequential things (lists, vectors, etc.), but maintains the lowest
 ;; level sequential items. The result should be a sequence of
@@ -4850,7 +4850,7 @@ The
 (= (__ '((1 2)((3 4)((((5 6)))))))
    '((1 2)(3 4)(5 6)))
 
-* ;; 4Clojure Question 94
+* 4Clojure Question 94
 ;; The <a
 ;; href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">game of
 ;; life</a> is a cellular automaton devised by mathematician John
@@ -4903,7 +4903,7 @@ The
     "  #   "
     "      "])
 
-* ;; 4Clojure Question 95
+* 4Clojure Question 95
 ;; Write a predicate which checks whether or not a given sequence
 ;; represents a <a
 ;; href="http://en.wikipedia.org/wiki/Binary_tree">binary tree</a>.
@@ -4932,7 +4932,7 @@ The
    false)
 
 
-* ;; 4Clojure Question 96
+* 4Clojure Question 96
 ;; Let us define a binary tree as "symmetric" if the left half of the
 ;; tree is the mirror image of the right half of the tree. Write a
 ;; predicate to determine whether or not a given binary tree is
@@ -4957,7 +4957,7 @@ The
           [2 [3 nil [4 [6 nil nil] nil]] nil]])
    false)
 
-* ;; 4Clojure Question 97
+* 4Clojure Question 97
 ;; <a href="http://en.wikipedia.org/wiki/Pascal%27s_triangle">Pascal's
 ;; triangle</a> is a triangle of numbers computed using the following
 ;; rules:<br/></br>- The first row is 1.</br>- Each successive row is
@@ -4977,7 +4977,7 @@ The
 (= (__ 11)
    [1 10 45 120 210 252 210 120 45 10 1])
 
-* ;; 4Clojure Question 98
+* 4Clojure Question 98
 ;; A function f defined on a domain D induces an <a
 ;; href="http://en.wikipedia.org/wiki/Equivalence_relation">equivalence
 ;; relation</a> on D, as follows: a is equivalent to b with respect to
@@ -5000,7 +5000,7 @@ The
    #{#{0 1 2 3 4}})
 
 
-* ;; 4Clojure Question 99
+* 4Clojure Question 99
 ;; Write a function which multiplies two numbers and returns the
 ;; result as a sequence of its digits. Use M-x 4clojure-check-answers
 ;; when you're done!
@@ -5011,7 +5011,7 @@ The
 
 (= (__ 999 99) [9 8 9 0 1])
 
-* ;; 4Clojure Question 100
+* 4Clojure Question 100
 ;; Write a function which calculates the <a
 ;; href="http://en.wikipedia.org/wiki/Least_common_multiple">least
 ;; common multiple</a>. Your function should accept a variable number
@@ -5027,7 +5027,7 @@ The
 
 (== (__ 7 5/7 2 3/5) 210)
 
-* ;; 4Clojure Question 101
+* 4Clojure Question 101
 ;; Given two sequences x and y, calculate the <a
 ;; href="https://secure.wikimedia.org/wikipedia/en/wiki/Levenshtein_distance">Levenshtein
 ;; distance</a> of x and y, i. e. the minimum number of edits needed
@@ -5054,7 +5054,7 @@ The
 
 (= (__ "gaattctaatctc" "caaacaaaaaattt") 9)
 
-* ;; 4Clojure Question 102
+* 4Clojure Question 102
 ;; When working with java, you often need to create an object with
 ;; <code>fieldsLikeThis</code>, but you'd rather work with a hashmap
 ;; that has <code>:keys-like-this</code> until it's time to convert.
@@ -5067,7 +5067,7 @@ The
 
 (= (__ "leaveMeAlone") "leaveMeAlone")
 
-* ;; 4Clojure Question 103
+* 4Clojure Question 103
 ;; Given a sequence S consisting of n elements generate all <a
 ;; href="https://secure.wikimedia.org/wikipedia/en/wiki/Combination">k-combinations</a>
 ;; of S, i. e. generate all possible sets consisting of k distinct
@@ -5090,7 +5090,7 @@ The
 (= (__ 2 #{[1 2 3] :a "abc" "efg"}) #{#{[1 2 3] :a} #{[1 2 3] "abc"} #{[1 2 3] "efg"}
                                     #{:a "abc"} #{:a "efg"} #{"abc" "efg"}})
 
-* ;; 4Clojure Question 104
+* 4Clojure Question 104
 ;; This is the inverse of <a href='92'>Problem 92</a>, but much
 ;; easier. Given an integer smaller than 4000, return the
 ;; corresponding roman numeral in uppercase, adhering to the <a
@@ -5111,7 +5111,7 @@ The
 
 (= "XLVIII" (__ 48))
 
-* ;; 4Clojure Question 105
+* 4Clojure Question 105
 ;; Given an input sequence of keywords and numbers, create a map such
 ;; that each key in the map is a keyword, and the value is a sequence
 ;; of all the numbers (if any) between it and the next keyword in the
@@ -5125,7 +5125,7 @@ The
 
 (= {:a [1 2 3], :b [], :c [4]} (__ [:a 1 2 3 :b :c 4]))
 
-* ;; 4Clojure Question 106
+* 4Clojure Question 106
 ;; Given a pair of numbers, the start and end point, find a path
 ;; between the two using only three possible operations:<ul>
 ;; <li>double</li> <li>halve (odd numbers cannot be halved)</li>
@@ -5146,7 +5146,7 @@ The
 (= 5 (__ 9 12)) ; 9 11 22 24 12
 
 
-* ;; 4Clojure Question 107
+* 4Clojure Question 107
 ;; <p>Lexical scope and first-class functions are two of the most
 ;; basic building blocks of a functional language like Clojure. When
 ;; you combine the two together, you get something very powerful
@@ -5167,7 +5167,7 @@ The
 
 (= [1 2 4 8 16] (map #((__ %) 2) [0 1 2 3 4]))
 
-* ;; 4Clojure Question 108
+* 4Clojure Question 108
 ;; <p>Given any number of sequences, each sorted from smallest to
 ;; largest, find the smallest single number which appears in all of
 ;; the sequences. The sequences may be infinite, so be careful to
@@ -5183,7 +5183,7 @@ The
           (filter #(zero? (bit-and % (dec %))) (range)) ;; powers of 2
           (iterate inc 20))) ;; at least as large as 20
 
-* ;; 4Clojure Question 109
+* 4Clojure Question 109
 ;; <p>Given any number of sequences, each sorted from smallest to
 ;; largest, find the smallest single number which appears in all of
 ;; the sequences. The sequences may be infinite, so be careful to
@@ -5199,7 +5199,7 @@ The
           (filter #(zero? (bit-and % (dec %))) (range)) ;; powers of 2
           (iterate inc 20))) ;; at least as large as 20
 
-* ;; 4Clojure Question 110
+* 4Clojure Question 110
 ;; <p>Write a function that returns a lazy sequence of
 ;; "pronunciations" of a sequence of numbers. A pronunciation of each
 ;; element in the sequence consists of the number of repeating
@@ -5220,7 +5220,7 @@ The
 (= 338 (count (nth (__ [3 2]) 15)))
 
 
-* ;; 4Clojure Question 111
+* 4Clojure Question 111
 ;; Write a function that takes a string and a partially-filled
 ;; crossword puzzle board, and determines if the input string can be
 ;; legally placed onto the board. </br></br> The crossword puzzle
@@ -5257,7 +5257,7 @@ The
                         "_ _ f _ # _ _"]))
 
 
-* ;; 4Clojure Question 112
+* 4Clojure Question 112
 ;; Create a function which takes an integer and a nested collection of
 ;; integers as arguments. Analyze the elements of the input collection
 ;; and return a sequence which maintains the nested structure, and
@@ -5285,7 +5285,7 @@ The
 (=  (__ 1 [-10 [1 [2 3 [4 5 [6 7 [8]]]]]])
    '(-10 (1 (2 3 (4)))))
 
-* ;; 4Clojure Question 113
+* 4Clojure Question 113
 ;; Write a function that takes a variable number of integer arguments.
 ;; If the output is coerced into a string, it should return a comma
 ;; (and space) separated list of the inputs sorted smallest to
@@ -5307,7 +5307,7 @@ The
 (and (= nil (seq (__)))
      (=  "" (str (__))))
 
-* ;; 4Clojure Question 114
+* 4Clojure Question 114
 ;; <p><a
 ;; href="http://clojuredocs.org/clojure_core/clojure.core/take-while">take-while</a>
 ;; is great for filtering sequences, but it limited: you can only
@@ -5330,7 +5330,7 @@ The
    (__ 1 #{"a"}
          ["this" "is" "a" "sentence" "i" "wrote"]))
 
-* ;; 4Clojure Question 115
+* 4Clojure Question 115
 ;; A balanced number is one whose component digits have the same sum
 ;; on the left and right halves of the number. Write a function which
 ;; accepts an integer n, and returns true iff n is balanced. 
@@ -5352,7 +5352,7 @@ The
 (= (take 20 (filter __ (range)))
    [0 1 2 3 4 5 6 7 8 9 11 22 33 44 55 66 77 88 99 101])  
 
-* ;; 4Clojure Question 116
+* 4Clojure Question 116
 ;; A <a href="http://en.wikipedia.org/wiki/Balanced_prime">balanced
 ;; prime</a> is a prime number which is also the mean of the primes
 ;; directly before and after it in the sequence of valid primes.
@@ -5365,7 +5365,7 @@ The
 
 (= 1103 (nth (filter __ (range)) 15))
 
-* ;; 4Clojure Question 117
+* 4Clojure Question 117
 ;; A mad scientist with tenure has created an experiment tracking mice
 ;; in a maze. Several mazes have been randomly generated, and you've
 ;; been tasked with writing a program to determine the mazes in which
@@ -5422,7 +5422,7 @@ The
               "        "
               "# # # #M"]))
 
-* ;; 4Clojure Question 118
+* 4Clojure Question 118
 ;; <p>Map is one of the core elements of a functional programming
 ;; language. Given a function <code>f</code> and an input sequence
 ;; <code>s</code>, return a lazy sequence of <code>(f x)</code> for
@@ -5440,7 +5440,7 @@ The
         (drop (dec 1000000))
         (take 2)))
 
-* ;; 4Clojure Question 119
+* 4Clojure Question 119
 ;; <p>As in <a href="/problem/73">Problem 73</a>, a tic-tac-toe board
 ;; is represented by a two dimensional vector. X is represented by :x,
 ;; O is represented by :o, and empty is represented by :e. Create a
@@ -5476,7 +5476,7 @@ The
            [:x :e :e]])
    #{[2 2] [1 1]})
 
-* ;; 4Clojure Question 120
+* 4Clojure Question 120
 ;; Write a function which takes a collection of integers as an
 ;; argument. Return the count of how many elements are smaller than
 ;; the sum of their squared component digits. For example: 10 is
@@ -5491,7 +5491,7 @@ The
 
 (= 50 (__ (range 1000)))
 
-* ;; 4Clojure Question 121
+* 4Clojure Question 121
 ;; Given a mathematical formula in prefix notation, return a function
 ;; 	 that calculates the value of the formula. The formula can
 ;; 	 contain nested calculations using the four basic mathematical
@@ -5518,7 +5518,7 @@ The
       '{x 4 y 1}))
 
 
-* ;; 4Clojure Question 122
+* 4Clojure Question 122
 ;; Convert a binary number, provided in the form of a string, to its
 ;; numerical value. Use M-x 4clojure-check-answers when you're done!
 
@@ -5536,7 +5536,7 @@ The
 
 (= 65535 (__ "1111111111111111"))
 
-* ;; 4Clojure Question 123
+* 4Clojure Question 123
 ;; Convert a binary number, provided in the form of a string, to its
 ;; numerical value. Use M-x 4clojure-check-answers when you're done!
 
@@ -5554,7 +5554,7 @@ The
 
 (= 65535 (__ "1111111111111111"))
 
-* ;; 4Clojure Question 124
+* 4Clojure Question 124
 ;; <p><a href="http://en.wikipedia.org/wiki/Reversi">Reversi</a> is
 ;; normally played on an 8 by 8 board. In this problem, a 4 by 4 board
 ;; is represented as a two-dimensional vector with black, white, and
@@ -5591,7 +5591,7 @@ The
          [b w w w]] 'b))
 
 
-* ;; 4Clojure Question 125
+* 4Clojure Question 125
 ;; Create a function of no arguments which returns a string that is an
 ;; <i>exact</i> copy of the function itself. <br /><br /> Hint: read
 ;; <a href="http://en.wikipedia.org/wiki/Quine_(computing)">this</a>
@@ -5602,13 +5602,13 @@ The
 
 (= (str '__) (__))
 
-* ;; 4Clojure Question 126
+* 4Clojure Question 126
 ;; Enter a value which satisfies the following: 
 
 (let [x __]
   (and (= (class x) x) x))
 
-* ;; 4Clojure Question 127
+* 4Clojure Question 127
 ;; Everyone loves triangles, and it's easy to understand
 ;; why&mdash;they're so wonderfully symmetric (except scalenes, they
 ;; suck). <br/><br/> Your passion for triangles has led you to become
@@ -5694,7 +5694,7 @@ The
 ; 11111      11111
 ; 00000      00000
 
-* ;; 4Clojure Question 128
+* 4Clojure Question 128
 ;; <p>A standard American deck of playing cards has four suits -
 ;; spades, hearts, diamonds, and clubs - and thirteen cards in each
 ;; suit. Two is the lowest rank, followed by other integers up to ten;
@@ -5720,7 +5720,7 @@ The
                    '[S2 S3 S4 S5 S6 S7
                      S8 S9 ST SJ SQ SK SA]))
 
-* ;; 4Clojure Question 129
+* 4Clojure Question 129
 ;; <p>A standard American deck of playing cards has four suits -
 ;; spades, hearts, diamonds, and clubs - and thirteen cards in each
 ;; suit. Two is the lowest rank, followed by other integers up to ten;
@@ -5746,7 +5746,7 @@ The
                    '[S2 S3 S4 S5 S6 S7
                      S8 S9 ST SJ SQ SK SA]))
 
-* ;; 4Clojure Question 130
+* 4Clojure Question 130
 ;; Every node of a tree is connected to each of its children as well
 ;; as its parent. One can imagine grabbing one node of a tree and
 ;; dragging it up to the root position, leaving all connections
@@ -5825,7 +5825,7 @@ The
                  (o))))))
 
 
-* ;; 4Clojure Question 131
+* 4Clojure Question 131
 ;; Given a variable number of sets of integers, create a function
 ;; which returns true iff all of the sets have a non-empty subset with
 ;; an equivalent summation. 
@@ -5863,7 +5863,7 @@ The
 (= true  (__ #{-10 9 -8 7 -6 5 -4 3 -2 1}
              #{10 -9 8 -7 6 -5 4 -3 2 -1}))
 
-* ;; 4Clojure Question 132
+* 4Clojure Question 132
 ;; Write a function that takes a two-argument predicate, a value, and
 ;; a collection; and returns a new collection where the
 ;; <code>value</code> is inserted between every two items that satisfy
@@ -5885,7 +5885,7 @@ The
                        (= (mod a 2) (mod b 2)))
                      :same))))
 
-* ;; 4Clojure Question 133
+* 4Clojure Question 133
 ;; Write a function that takes a two-argument predicate, a value, and
 ;; a collection; and returns a new collection where the
 ;; <code>value</code> is inserted between every two items that satisfy
@@ -5907,7 +5907,7 @@ The
                        (= (mod a 2) (mod b 2)))
                      :same))))
 
-* ;; 4Clojure Question 134
+* 4Clojure Question 134
 ;; Write a function which, given a key and map, returns true <a
 ;; href="http://en.wikipedia.org/wiki/If_and_only_if">iff</a> the map
 ;; contains an entry with that key and its value is nil. 
@@ -5918,7 +5918,7 @@ The
 
 (false? (__ :c {:a nil :b 2}))
 
-* ;; 4Clojure Question 135
+* 4Clojure Question 135
 ;; Your friend Joe is always whining about Lisps using the prefix
 ;; notation for math. Show him how you could easily write a function
 ;; that does math using the infix notation. Is your favorite language
@@ -5935,7 +5935,7 @@ The
 
 (= 72 (__ 20 / 2 + 2 + 4 + 8 - 6 - 10 * 9))
 
-* ;; 4Clojure Question 136
+* 4Clojure Question 136
 ;; Your friend Joe is always whining about Lisps using the prefix
 ;; notation for math. Show him how you could easily write a function
 ;; that does math using the infix notation. Is your favorite language
@@ -5952,7 +5952,7 @@ The
 
 (= 72 (__ 20 / 2 + 2 + 4 + 8 - 6 - 10 * 9))
 
-* ;; 4Clojure Question 137
+* 4Clojure Question 137
 ;; Write a function which returns a sequence of digits of a
 ;; non-negative number (first argument) in numerical system with an
 ;; arbitrary base (second argument). Digits should be represented with
@@ -5969,7 +5969,7 @@ The
 
 (= [16 18 5 24 15 1] (__ Integer/MAX_VALUE 42))
 
-* ;; 4Clojure Question 138
+* 4Clojure Question 138
 ;; Create a function of two integer arguments: the start and end,
 ;; respectively. You must create a vector of strings which renders a
 ;; 45&deg; rotated square of integers which are successive squares
@@ -6009,7 +6009,7 @@ The
                   "  * *  "
                   "   *   "])
 
-* ;; 4Clojure Question 139
+* 4Clojure Question 139
 ;; Create a function of two integer arguments: the start and end,
 ;; respectively. You must create a vector of strings which renders a
 ;; 45&deg; rotated square of integers which are successive squares
@@ -6049,7 +6049,7 @@ The
                   "  * *  "
                   "   *   "])
 
-* ;; 4Clojure Question 140
+* 4Clojure Question 140
 ;; Create a function which accepts as input a boolean algebra function
 ;; in the form of a set of sets, where the inner sets are collections
 ;; of symbols corresponding to the input boolean variables which
@@ -6142,7 +6142,7 @@ The
    #{#{'B 'D}
      #{'b 'd}})
 
-* ;; 4Clojure Question 141
+* 4Clojure Question 141
 ;; <p> In <a
 ;; href="http://en.wikipedia.org/wiki/Trick-taking_game">trick-taking
 ;; card games</a> such as bridge, spades, or hearts, cards are played
@@ -6177,7 +6177,7 @@ The
    ((__ :heart) [{:suit :heart :rank 6} {:suit :heart :rank 8}
                  {:suit :diamond :rank 10} {:suit :heart :rank 4}]))
 
-* ;; 4Clojure Question 142
+* 4Clojure Question 142
 ;; <p> In <a
 ;; href="http://en.wikipedia.org/wiki/Trick-taking_game">trick-taking
 ;; card games</a> such as bridge, spades, or hearts, cards are played
@@ -6212,7 +6212,7 @@ The
    ((__ :heart) [{:suit :heart :rank 6} {:suit :heart :rank 8}
                  {:suit :diamond :rank 10} {:suit :heart :rank 4}]))
 
-* ;; 4Clojure Question 143
+* 4Clojure Question 143
 ;; Create a function that computes the <a
 ;; href="http://en.wikipedia.org/wiki/Dot_product#Definition">dot
 ;; product</a> of two sequences. You may assume that the vectors will
@@ -6226,7 +6226,7 @@ The
 
 (= 256 (__ [2 5 6] [100 10 1]))
 
-* ;; 4Clojure Question 144
+* 4Clojure Question 144
 ;; Write an oscillating iterate: a function that takes an initial
 ;; value and a variable number of functions. It should return a lazy
 ;; sequence of the functions applied to the value in order, restarting
@@ -6239,7 +6239,7 @@ The
 (= (take 12 (__ 0 inc dec inc dec inc)) [0 1 0 1 0 1 2 1 2 1 2 3])
 
 
-* ;; 4Clojure Question 145
+* 4Clojure Question 145
 ;; Clojure's <a
 ;; href="http://clojuredocs.org/clojure_core/clojure.core/for">for</a>
 ;; macro is a tremendously versatile mechanism for producing a
@@ -6261,7 +6261,7 @@ The
 (= __ (for [[x y] (partition 2 (range 20))]
         (+ x y)))
 
-* ;; 4Clojure Question 146
+* 4Clojure Question 146
 ;; <p>Because Clojure's <code>for</code> macro allows you to "walk"
 ;; over multiple sequences in a nested fashion, it is excellent for
 ;; transforming all sorts of sequences. If you don't want a sequence
@@ -6291,7 +6291,7 @@ The
 (= (__ '{m {1 [a b c] 3 nil}})
    '{[m 1] [a b c], [m 3] nil})
 
-* ;; 4Clojure Question 147
+* 4Clojure Question 147
 ;; Write a function that, for any given input vector of numbers,
 ;; returns an infinite lazy sequence of vectors, where each next one
 ;; is constructed from the previous following the rules used in <a
@@ -6307,7 +6307,7 @@ The
 
 (= (take 100 (__ [2 4 2])) (rest (take 101 (__ [2 2]))))
 
-* ;; 4Clojure Question 148
+* 4Clojure Question 148
 ;; <p>Write a function which calculates the sum of all natural numbers
 ;; under <i>n</i> (first argument) which are evenly divisible by at
 ;; least one of <i>a</i> and <i>b</i> (second and third argument).
@@ -6333,7 +6333,7 @@ The
 (= "4530161696788274281"
   (str (__ (* 10000 10000 1000) 1597 3571)))
 
-* ;; 4Clojure Question 149
+* 4Clojure Question 149
 ;; <p>Write a function which calculates the sum of all natural numbers
 ;; under <i>n</i> (first argument) which are evenly divisible by at
 ;; least one of <i>a</i> and <i>b</i> (second and third argument).
@@ -6359,7 +6359,7 @@ The
 (= "4530161696788274281"
   (str (__ (* 10000 10000 1000) 1597 3571)))
 
-* ;; 4Clojure Question 150
+* 4Clojure Question 150
 ;; <p>A palindromic number is a number that is the same when written
 ;; forwards or backwards (e.g., 3, 99, 14341).</p> <p>Write a function
 ;; which takes an integer <code>n</code>, as its only argument, and
@@ -6394,7 +6394,7 @@ The
 (= (nth (__ 0) 10101)
    9102019)
 
-* ;; 4Clojure Question 151
+* 4Clojure Question 151
 ;; <p>A palindromic number is a number that is the same when written
 ;; forwards or backwards (e.g., 3, 99, 14341).</p> <p>Write a function
 ;; which takes an integer <code>n</code>, as its only argument, and
@@ -6429,7 +6429,7 @@ The
 (= (nth (__ 0) 10101)
    9102019)
 
-* ;; 4Clojure Question 152
+* 4Clojure Question 152
 ;; <p> A <a href="http://en.wikipedia.org/wiki/Latin_square">Latin
 ;; square</a> of order <code>n</code> is an <code>n x n</code> array
 ;; that contains <code>n</code> different elements, each occurring
@@ -6527,7 +6527,7 @@ The
               [8 1 2 4 5]])
    {4 1, 3 1, 2 7})
 
-* ;; 4Clojure Question 153
+* 4Clojure Question 153
 ;; <p> Given a set of sets, create a function which returns
 ;; <code>true</code> if no two of those sets have any elements in
 ;; common<sup>1</sup> and <code>false</code> otherwise. Some of the
@@ -6582,7 +6582,7 @@ The
          #{, , , #_, , empty?}})
    false)
 
-* ;; 4Clojure Question 154
+* 4Clojure Question 154
 ;; <p> Given a set of sets, create a function which returns
 ;; <code>true</code> if no two of those sets have any elements in
 ;; common<sup>1</sup> and <code>false</code> otherwise. Some of the
@@ -6637,7 +6637,7 @@ The
          #{, , , #_, , empty?}})
    false)
 
-* ;; 4Clojure Question 155
+* 4Clojure Question 155
 ;; <p> Given a set of sets, create a function which returns
 ;; <code>true</code> if no two of those sets have any elements in
 ;; common<sup>1</sup> and <code>false</code> otherwise. Some of the
@@ -6692,7 +6692,7 @@ The
          #{, , , #_, , empty?}})
    false)
 
-* ;; 4Clojure Question 156
+* 4Clojure Question 156
 ;; When retrieving values from a map, you can specify default values
 ;; in case the key is not found:<br/><br/>(= 2 (:foo {:bar 0, :baz 1}
 ;; 2))<br/><br/>However, what if you want the map itself to contain
@@ -6706,7 +6706,7 @@ The
 (= (__ [:a :b] [:foo :bar]) {:foo [:a :b] :bar [:a :b]})
 
 
-* ;; 4Clojure Question 157
+* 4Clojure Question 157
 ;; Transform a sequence into a sequence of pairs containing the
 ;; original elements along with their index. 
 
@@ -6717,7 +6717,7 @@ The
 (= (__ [[:foo] {:bar :baz}]) [[[:foo] 0] [{:bar :baz} 1]])
 
 
-* ;; 4Clojure Question 158
+* 4Clojure Question 158
 ;; Write a function that accepts a curried function of unknown arity
 ;; <i>n</i>. Return an equivalent function of <i>n</i> arguments.
 ;; <br/> You may wish to read <a
@@ -6744,7 +6744,7 @@ The
 
 
 
-* ;; 4Clojure Question 159
+* 4Clojure Question 159
 ;; Write a function that accepts a curried function of unknown arity
 ;; <i>n</i>. Return an equivalent function of <i>n</i> arguments.
 ;; <br/> You may wish to read <a
@@ -6771,7 +6771,7 @@ The
 
 
 
-* ;; 4Clojure Question 160
+* 4Clojure Question 160
 ;; Write a function that accepts a curried function of unknown arity
 ;; <i>n</i>. Return an equivalent function of <i>n</i> arguments.
 ;; <br/> You may wish to read <a
@@ -6798,7 +6798,7 @@ The
 
 
 
-* ;; 4Clojure Question 161
+* 4Clojure Question 161
 ;; Set A is a subset of set B, or equivalently B is a superset of A,
 ;; if A is "contained" inside B. A and B may coincide. 
 
@@ -6811,7 +6811,7 @@ The
 (clojure.set/subset? #{1 2} __)
 
 
-* ;; 4Clojure Question 162
+* 4Clojure Question 162
 ;; In Clojure, only nil and false represent the values of logical
 ;; falsity in conditional tests - anything else is logical truth. Use
 ;; M-x 4clojure-check-answers when you're done!
@@ -6831,7 +6831,7 @@ The
 (= __ (if 1 1 0))
 
 
-* ;; 4Clojure Question 163
+* 4Clojure Question 163
 ;; In Clojure, only nil and false represent the values of logical
 ;; falsity in conditional tests - anything else is logical truth. Use
 ;; M-x 4clojure-check-answers when you're done!
@@ -6851,7 +6851,7 @@ The
 (= __ (if 1 1 0))
 
 
-* ;; 4Clojure Question 164
+* 4Clojure Question 164
 ;; A <a
 ;; href="http://en.wikipedia.org/wiki/Deterministic_finite_automaton">deterministic
 ;; finite automaton (DFA)</a> is an abstract machine that recognizes a
@@ -6939,7 +6939,7 @@ The
 
 
 
-* ;; 4Clojure Question 165
+* 4Clojure Question 165
 ;; A <a
 ;; href="http://en.wikipedia.org/wiki/Deterministic_finite_automaton">deterministic
 ;; finite automaton (DFA)</a> is an abstract machine that recognizes a
@@ -7027,7 +7027,7 @@ The
 
 
 
-* ;; 4Clojure Question 166
+* 4Clojure Question 166
 ;; For any orderable data type it's possible to derive all of the
 ;; basic comparison operations (&lt;, &le;, =, &ne;, &ge;, and &gt;)
 ;; from a single operation (any operator but = or &ne; will work).
@@ -7049,7 +7049,7 @@ The
 
 
 
-* ;; 4Clojure Question 167
+* 4Clojure Question 167
 ;; For any orderable data type it's possible to derive all of the
 ;; basic comparison operations (&lt;, &le;, =, &ne;, &ge;, and &gt;)
 ;; from a single operation (any operator but = or &ne; will work).
@@ -7071,7 +7071,7 @@ The
 
 
 
-* ;; 4Clojure Question 168
+* 4Clojure Question 168
 ;; <p> In what follows, <code>m</code>, <code>n</code>,
 ;; <code>s</code>, <code>t</code> denote nonnegative integers,
 ;; <code>f</code> denotes a function that accepts two arguments and is
@@ -7150,7 +7150,7 @@ The
    true)
 
 
-* ;; 4Clojure Question 169
+* 4Clojure Question 169
 ;;
 ;; <p>
 ;;
