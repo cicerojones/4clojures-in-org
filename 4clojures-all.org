@@ -3359,7 +3359,10 @@ benizi's solution:
 The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
-* 4Clojure Question 39
+* 4Clojure Question 39 function creation (takes two sequences and returns the first item from each)
+#+begin_src clojure
+
+#+END_SRC
 
 #+BEGIN_SRC clojure
 ;; Write a function which takes two sequences and returns the first
@@ -3515,6 +3518,7 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (team@4clojure.com)
 
 * 4Clojure Question 40
+#+BEGIN_SRC clojure
 ;; Write a function which separates the items of a sequence by an
 ;; arbitrary value. Restrictions (please don't use these function(s)):
 ;; interpose Use M-x 4clojure-check-answers when you're done!
@@ -3524,6 +3528,8 @@ The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
 (= (apply str (__ ", " ["one" "two" "three"])) "one, two, three")
 
 (= (__ :z [:a :b :c :d]) [:a :z :b :z :c :z :d])
+#+END_SRC
+
 
 ** Solutions
 
