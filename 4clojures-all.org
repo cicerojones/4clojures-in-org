@@ -1843,9 +1843,8 @@ Solutions:
 (fn [lst] (filter (complement sequential?)
           	(rest (tree-seq sequential? seq lst))))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 118, before 4clojure started saving solutions.
+
+Scored 118, before 4clojure started saving solutions.
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2066,9 +2065,8 @@ Solutions:
 
 (fn [x] (apply str (re-seq #"[A-Z]" x)))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 115, before 4clojure started saving solutions.
+
+Scored 115, before 4clojure started saving solutions.
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2197,10 +2195,10 @@ benizi's solution:
 Solutions:
 
 partition-by (fn [x] x)
-0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 29, before 4clojure started saving solutions.
+
+0x89's solution: 
+
+Scored 29, before 4clojure started saving solutions.
 ------------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2336,9 +2334,8 @@ Solutions:
 
 partition-by (fn [x] x)
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 29, before 4clojure started saving solutions.
+
+Scored 29, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2430,9 +2427,8 @@ Solutions:
                      (cons (first lst)
                            (dupps (rest lst))))))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 43, before 4clojure started saving solutions.
+
+Scored 43, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2544,8 +2540,8 @@ benizi's solution:
 #+BEGIN_SRC clojure
 #(mapcat (fn [a] (list a a)) %)
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
+
 
 * 33 function creation (replicates each element of a sequence)
 
@@ -2573,9 +2569,8 @@ Solutions:
     (apply interleave (take n (repeat lst)))
   	lst))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 44, before 4clojure started saving solutions.
+
+Scored 44, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2685,8 +2680,8 @@ benizi's solution:
 (fn [lst n]
   (mapcat #(repeat n %) lst))
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
+
 
 * 34 function creation (creates a list of all integers in a given...)
 
@@ -2710,9 +2705,8 @@ Solutions:
 	  (cond (= x y) ()
     	    :else (cons x (rng (inc x) y))))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 52, before 4clojure started saving solutions.
+
+Scored 52, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -2839,8 +2833,9 @@ benizi's solution:
       acc
       (recur (conj acc n) (inc n)))))
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
+
+
 
 * 35 let-ing local variables
 
@@ -2964,8 +2959,7 @@ benizi's solution:
 #+BEGIN_SRC clojure
 7
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 36 let-ing for correct arithmetic
 
@@ -3096,8 +3090,7 @@ benizi's solution:
 #+BEGIN_SRC clojure
 [z 1 y 3 x 7]
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 37 re-seq and regex syntax
 
@@ -3216,8 +3209,7 @@ benizi's solution:
 #+BEGIN_SRC clojure
 "ABC"
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 38 function creation (takes a variable number of parameters)
 
@@ -3240,9 +3232,8 @@ Solutions:
 (fn [& args]
 	(first (sort > args)))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 35, before 4clojure started saving solutions.
+
+Scored 35, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -3356,8 +3347,7 @@ benizi's solution:
 (fn [& args]
   (reduce (fn [a b] (if (< a b) b a)) args))
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 39 function creation (takes two sequences and returns the first item from each)
 #+begin_src clojure
@@ -3385,9 +3375,8 @@ Solutions:
 
 mapcat #(vec [%1 %2])
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 42, before 4clojure started saving solutions.
+
+Scored 42, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -3514,8 +3503,7 @@ benizi's solution:
 (fn [x y]
   (mapcat #(vector % %2) x y))
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 
 * 40 function creation (separates the items of a sequence by an arbitrary value)
@@ -3540,9 +3528,8 @@ Solutions:
 (fn [x lst] 
 	 (butlast (mapcat  (fn [y] (vector y x))  lst)))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 73, before 4clojure started saving solutions.
+
+Scored 73, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -3653,8 +3640,7 @@ benizi's solution:
       (recur (conj acc sep (first left)) (rest left))
       acc)))
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 41
 ;; Write a function which drops every Nth item from a sequence. Use
@@ -3676,9 +3662,8 @@ Solutions:
 	       lst))
 	     (partition-all %2 %1))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 70, before 4clojure started saving solutions.
+
+Scored 70, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -3825,8 +3810,7 @@ benizi's solution:
              (rest left))
       acc))
 #+END_SRC)
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 42
 ;; Write a function which calculates factorials. 
@@ -3846,9 +3830,8 @@ Solutions:
 (fn [n]
   (reduce * (range 1 (inc n))))
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 30, before 4clojure started saving solutions.
+
+Scored 30, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -3976,8 +3959,7 @@ benizi's solution:
   (if (< x 2) x
     (* x (fac (dec x)))))
 #+END_SRC
-The content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 
 * 43
 ;; Write a function which reverses the interleave process into x
@@ -4015,9 +3997,8 @@ Solutions:
 
 '(1 4 7 10 13)
 0x89's solution:
-#+BEGIN_SRC clojure
-Scored
-#+END_SRC 9, before 4clojure started saving solutions.
+
+Scored 9, before 4clojure started saving solutions.
 ----------------------------------------------------------------------------------------------
 _pcl's solution:
 #+BEGIN_SRC clojure
@@ -4118,11 +4099,7 @@ benizi's solution:
 #+BEGIN_SRC clojure
 [1 4 7 10 13]
 #+END_SRC
-#+BEGIN_SRC clojure
-The
-#+END_SRC
-<sclojure content on 4clojure.com is available under the EPL v 1.0 license.Contact us
-(team@4clojure.com)
+
 * 46
 ;; Write a higher-order function which flips the order of the
 ;; arguments of an input function. 
@@ -4135,10 +4112,12 @@ The
 
 (= [1 2 3] ((__ take) [1 2 3 4 5] 3))
 
-*
+* 47
+
+#+begin_src clojure
 
 
-<sclojure ;; 4Clojure Question 47
+;; 4Clojure Question 47
 ;; The contains? function checks if a KEY is present in a given
 ;; collection. This often leads beginner clojurians to use it
 ;; incorrectly with numerically indexed collections like vectors and
@@ -4151,6 +4130,7 @@ The
 (contains? {4 :a 2 :b} __)
 
 (not (contains? '(1 2 4) __))
+#+end_src
  
 * 48
 ;; The some function takes a predicate function and a collection. It
@@ -4162,7 +4142,7 @@ The
 (= __ (some #(when (even? %) %) [5 6 7 8]))
 
 
-*
+
 * 49
 ;; Write a function which will split a sequence into two parts.
 ;; Restrictions (please don't use these function(s)): split-at 
@@ -4172,7 +4152,11 @@ The
 (= (__ 1 [:a :b :c :d]) [[:a] [:b :c :d]])
 
 (= (__ 2 [[1 2] [3 4] [5 6]]) [[[1 2] [3 4]] [[5 6]]])
- ;; 4Clojure Question 50
+
+
+* 50
+
+;; 4Clojure Question 50
 ;; Write a function which takes a sequence consisting of items with
 ;; different types and splits them up into a set of homogeneous
 ;; sub-sequences. The internal order of each sub-sequence should be
