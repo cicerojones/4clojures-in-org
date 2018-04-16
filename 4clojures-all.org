@@ -2540,9 +2540,6 @@ benizi's solution:
 #+BEGIN_SRC clojure
 #(mapcat (fn [a] (list a a)) %)
 #+END_SRC
-
-
-
 * 33 function creation (replicates each element of a sequence)
 
 #+BEGIN_SRC clojure
@@ -2680,8 +2677,6 @@ benizi's solution:
 (fn [lst n]
   (mapcat #(repeat n %) lst))
 #+END_SRC
-
-
 
 * 34 function creation (creates a list of all integers in a given...)
 
@@ -2834,9 +2829,6 @@ benizi's solution:
       (recur (conj acc n) (inc n)))))
 #+END_SRC
 
-
-
-
 * 35 let-ing local variables
 
 #+BEGIN_SRC clojure
@@ -2959,7 +2951,6 @@ benizi's solution:
 #+BEGIN_SRC clojure
 7
 #+END_SRC
-
 
 * 36 let-ing for correct arithmetic
 
@@ -3091,7 +3082,6 @@ benizi's solution:
 [z 1 y 3 x 7]
 #+END_SRC
 
-
 * 37 re-seq and regex syntax
 
 #+BEGIN_SRC clojure
@@ -3209,7 +3199,6 @@ benizi's solution:
 #+BEGIN_SRC clojure
 "ABC"
 #+END_SRC
-
 
 * 38 function creation (takes a variable number of parameters)
 
@@ -3347,7 +3336,6 @@ benizi's solution:
 (fn [& args]
   (reduce (fn [a b] (if (< a b) b a)) args))
 #+END_SRC
-
 
 * 39 function creation (takes two sequences and returns the first item from each)
 #+begin_src clojure
@@ -3504,8 +3492,6 @@ benizi's solution:
   (mapcat #(vector % %2) x y))
 #+END_SRC
 
-
-
 * 40 function creation (separates the items of a sequence by an arbitrary value)
 
 #+BEGIN_SRC clojure
@@ -3519,7 +3505,6 @@ benizi's solution:
 
 (= (__ :z [:a :b :c :d]) [:a :z :b :z :c :z :d])
 #+END_SRC
-
 
 ** Solutions
 
@@ -3640,7 +3625,6 @@ benizi's solution:
       (recur (conj acc sep (first left)) (rest left))
       acc)))
 #+END_SRC
-
 
 * 41
 ;; Write a function which drops every Nth item from a sequence. Use
@@ -3811,7 +3795,6 @@ benizi's solution:
       acc))
 #+END_SRC)
 
-
 * 42
 ;; Write a function which calculates factorials. 
 
@@ -3959,7 +3942,6 @@ benizi's solution:
   (if (< x 2) x
     (* x (fac (dec x)))))
 #+END_SRC
-
 
 * 43
 ;; Write a function which reverses the interleave process into x
@@ -4141,8 +4123,6 @@ benizi's solution:
 
 (= __ (some #(when (even? %) %) [5 6 7 8]))
 
-
-
 * 49
 ;; Write a function which will split a sequence into two parts.
 ;; Restrictions (please don't use these function(s)): split-at 
@@ -4152,7 +4132,6 @@ benizi's solution:
 (= (__ 1 [:a :b :c :d]) [[:a] [:b :c :d]])
 
 (= (__ 2 [[1 2] [3 4] [5 6]]) [[[1 2] [3 4]] [[5 6]]])
-
 
 * 50
 
