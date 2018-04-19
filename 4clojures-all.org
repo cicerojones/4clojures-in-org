@@ -3626,7 +3626,7 @@ benizi's solution:
       acc)))
 #+END_SRC
 
-* 41
+* 41 function creation (drops every Nth item from a sequence)
 ;; Write a function which drops every Nth item from a sequence. Use
 ;; M-x 4clojure-check-answers when you're done!
 
