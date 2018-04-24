@@ -3795,7 +3795,8 @@ benizi's solution:
       acc))
 #+END_SRC)
 
-* 42
+* 42 function creation (calculate factorials)
+#+BEGIN_SRC clojure
 ;; Write a function which calculates factorials. 
 
 (= (__ 1) 1)
@@ -3805,6 +3806,8 @@ benizi's solution:
 (= (__ 5) 120)
 
 (= (__ 8) 40320)
+#+END_SRC
+
 
 ** Solutions
 
