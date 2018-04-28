@@ -3946,7 +3946,9 @@ benizi's solution:
     (* x (fac (dec x)))))
 #+END_SRC
 
-* 43
+* 43 function creation (reverse interleave)
+
+#+BEGIN_SRC clojure
 ;; Write a function which reverses the interleave process into x
 ;; number of subsequences. 
 
@@ -3956,6 +3958,7 @@ benizi's solution:
 
 (= (__ (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))
 
+#+END_SRC
 * 44
 ;; Write a function which can rotate a sequence in either direction.
 ;; Use M-x 4clojure-check-answers when you're done!
