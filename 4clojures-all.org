@@ -3959,7 +3959,9 @@ benizi's solution:
 (= (__ (range 10) 5) '((0 5) (1 6) (2 7) (3 8) (4 9)))
 
 #+END_SRC
-* 44
+* 44 function creation (rotate sequences)
+
+#+BEGIN_SRC clojure
 ;; Write a function which can rotate a sequence in either direction.
 ;; Use M-x 4clojure-check-answers when you're done!
 
@@ -3972,6 +3974,8 @@ benizi's solution:
 (= (__ 1 '(:a :b :c)) '(:b :c :a))
 
 (= (__ -4 '(:a :b :c)) '(:c :a :b))
+#+END_SRC
+
 
 * 45
 ;; The iterate function can be used to produce an infinite lazy
