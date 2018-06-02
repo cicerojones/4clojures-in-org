@@ -3977,11 +3977,14 @@ benizi's solution:
 #+END_SRC
 
 
-* 45
+* 45 iterate
+#+BEGIN_SRC clojure
 ;; The iterate function can be used to produce an infinite lazy
 ;; sequence. Use M-x 4clojure-check-answers when you're done!
 
 (= __ (take 5 (iterate #(+ 3 %) 1)))
+#+END_SRC
+
 
 ** Solutions
 
