@@ -4095,7 +4095,8 @@ benizi's solution:
 [1 4 7 10 13]
 #+END_SRC
 
-* 46
+* 46 function creation (flip argument order)
+#+BEGIN_SRC clojure
 ;; Write a higher-order function which flips the order of the
 ;; arguments of an input function. 
 
@@ -4106,6 +4107,8 @@ benizi's solution:
 (= 4 ((__ quot) 2 8))
 
 (= [1 2 3] ((__ take) [1 2 3 4 5] 3))
+#+END_SRC
+
 
 * 47
 
