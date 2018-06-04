@@ -4110,7 +4110,7 @@ benizi's solution:
 #+END_SRC
 
 
-* 47
+* 47 contains?
 
 #+begin_src clojure
 
@@ -4130,7 +4130,8 @@ benizi's solution:
 (not (contains? '(1 2 4) __))
 #+end_src
  
-* 48
+* 48 ~some~
+#+BEGIN_SRC clojure
 ;; The some function takes a predicate function and a collection. It
 ;; returns the first logical true value of (predicate x) where x is an
 ;; item in the collection. 
@@ -4138,6 +4139,8 @@ benizi's solution:
 (= __ (some #{2 7 6} [5 6 7 8]))
 
 (= __ (some #(when (even? %) %) [5 6 7 8]))
+#+END_SRC
+
 
 * 49
 ;; Write a function which will split a sequence into two parts.
