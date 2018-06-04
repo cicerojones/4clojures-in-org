@@ -4142,7 +4142,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 49
+* 49 function creation (split a sequence)
+#+BEGIN_SRC clojure
 ;; Write a function which will split a sequence into two parts.
 ;; Restrictions (please don't use these function(s)): split-at 
 
@@ -4151,6 +4152,8 @@ benizi's solution:
 (= (__ 1 [:a :b :c :d]) [[:a] [:b :c :d]])
 
 (= (__ 2 [[1 2] [3 4] [5 6]]) [[[1 2] [3 4]] [[5 6]]])
+#+END_SRC
+
 
 * 50
 
