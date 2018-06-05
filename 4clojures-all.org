@@ -4155,8 +4155,9 @@ benizi's solution:
 #+END_SRC
 
 
-* 50
+* 50 function creation (split and re-order heterogeneous sequences)
 
+#+BEGIN_SRC clojure
 ;; 4Clojure Question 50
 ;; Write a function which takes a sequence consisting of items with
 ;; different types and splits them up into a set of homogeneous
@@ -4169,6 +4170,8 @@ benizi's solution:
 (= (set (__ [:a "foo"  "bar" :b])) #{[:a :b] ["foo" "bar"]})
 
 (= (set (__ [[1 2] :a [3 4] 5 6 :b])) #{[[1 2] [3 4]] [:a :b] [5 6]})
+#+END_SRC
+
 
 * 51
 ;; Here is an example of some more sophisticated destructuring. Use
