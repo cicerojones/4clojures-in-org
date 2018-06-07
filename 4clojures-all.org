@@ -4209,7 +4209,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 54
+* 54 function creation (no ~partition~)
+#+BEGIN_SRC clojure
 ;; Write a function which returns a sequence of lists of x items each.
 ;; Lists of less than x items should not be returned. Restrictions
 ;; (please don't use these function(s)): partition, partition-all Use
@@ -4220,6 +4221,8 @@ benizi's solution:
 (= (__ 2 (range 8)) '((0 1) (2 3) (4 5) (6 7)))
 
 (= (__ 3 (range 8)) '((0 1 2) (3 4 5)))
+#+END_SRC
+
 
 * 55
 ;; Write a function which returns a map containing the number of
