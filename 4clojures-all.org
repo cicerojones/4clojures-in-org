@@ -4224,7 +4224,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 55
+* 55 function creation (no ~frequencies~)
+#+BEGIN_SRC clojure
 ;; Write a function which returns a map containing the number of
 ;; occurences of each distinct item in a sequence. Restrictions
 ;; (please don't use these function(s)): frequencies 
@@ -4234,6 +4235,8 @@ benizi's solution:
 (= (__ [:b :a :b :a :b]) {:a 2, :b 3})
 
 (= (__ '([1 2] [1 3] [1 3])) {[1 2] 1, [1 3] 2})
+#+END_SRC
+
 
 * 56
 ;; Write a function which removes the duplicates from a sequence.
