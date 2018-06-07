@@ -4183,11 +4183,14 @@ benizi's solution:
 #+END_SRC
 
 
-* 52
+* 52 destructuring with ~let~
+#+BEGIN_SRC clojure
 ;; Let bindings and function parameter lists support destructuring.
 ;; Use M-x 4clojure-check-answers when you're done!
 
 (= [2 4] (let [[a b c d e f g] (range)] __))
+#+END_SRC
+
 
 * 53
 ;; Given a vector of integers, find the longest consecutive
