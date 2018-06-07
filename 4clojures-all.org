@@ -4192,7 +4192,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 53
+* 53 longest consecutive subsequence
+#+BEGIN_SRC clojure
 ;; Given a vector of integers, find the longest consecutive
 ;; sub-sequence of increasing numbers. If two sub-sequences have the
 ;; same length, use the one that occurs first. An increasing
@@ -4205,6 +4206,8 @@ benizi's solution:
 (= (__ [2 3 3 4 5]) [3 4 5])
 
 (= (__ [7 6 5 4]) [])
+#+END_SRC
+
 
 * 54
 ;; Write a function which returns a sequence of lists of x items each.
