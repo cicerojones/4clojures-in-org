@@ -4238,7 +4238,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 56
+* 56 function creation (remove duplicates)
+#+BEGIN_SRC clojure
 ;; Write a function which removes the duplicates from a sequence.
 ;; Order of the items must be maintained. Restrictions (please don't
 ;; use these function(s)): distinct Use M-x 4clojure-check-answers
@@ -4251,6 +4252,8 @@ benizi's solution:
 (= (__ '([2 4] [1 2] [1 3] [1 3])) '([2 4] [1 2] [1 3]))
 
 (= (__ (range 50)) (range 50))
+#+END_SRC
+
 
 * 57 value returned by a simple recursive fn
 #+BEGIN_SRC clojure
