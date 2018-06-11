@@ -4266,7 +4266,8 @@ benizi's solution:
 (= __ ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
 #+END_SRC
 
-* 58
+* 58 function creation (~comp~)
+#+BEGIN_SRC clojure
 ;; Write a function which allows you to create function compositions.
 ;; The parameter list should take a variable number of functions, and
 ;; create a function applies them from right-to-left. Restrictions
@@ -4279,6 +4280,8 @@ benizi's solution:
 (= true ((__ zero? #(mod % 8) +) 3 5 7 9))
 
 (= "HELLO" ((__ #(.toUpperCase %) #(apply str %) take) 5 "hello world"))
+#+END_SRC
+
 
 * 59
 ;; Take a set of functions and return a new function that takes a
