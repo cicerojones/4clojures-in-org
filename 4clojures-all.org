@@ -4283,7 +4283,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 59
+* 59 function creation (~juxt~)
+#+BEGIN_SRC clojure
 ;; Take a set of functions and return a new function that takes a
 ;; variable number of arguments and returns a sequence containing the
 ;; result of applying each function left-to-right to the argument
@@ -4295,6 +4296,8 @@ benizi's solution:
 (= ["HELLO" 5] ((__ #(.toUpperCase %) count) "hello"))
 
 (= [2 6 4] ((__ :a :c :b) {:a 2, :b 4, :c 6, :d 8 :e 10}))
+#+END_SRC
+
 
 * 60
 ;; Write a function which behaves like reduce, but returns each
