@@ -4315,7 +4315,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 61
+* 61 function creation (~zipmap~)
+#+BEGIN_SRC clojure
 ;; Write a function which takes a vector of keys and a vector of
 ;; values and constructs a map from them. Restrictions (please don't
 ;; use these function(s)): zipmap 
@@ -4325,6 +4326,8 @@ benizi's solution:
 (= (__ [1 2 3 4] ["one" "two" "three"]) {1 "one", 2 "two", 3 "three"})
 
 (= (__ [:foo :bar] ["foo" "bar" "baz"]) {:foo "foo", :bar "bar"})
+#+END_SRC
+
 
 * 62
 ;; Given a side-effect free function f and an initial value x write a
