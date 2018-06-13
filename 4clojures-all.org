@@ -4299,7 +4299,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 60
+* 60 function creation (~reductions~)
+#+BEGIN_SRC clojure
 ;; Write a function which behaves like reduce, but returns each
 ;; intermediate value of the reduction. Your function must accept
 ;; either two or three arguments, and the return sequence must be
@@ -4311,6 +4312,8 @@ benizi's solution:
 (= (__ conj [1] [2 3 4]) [[1] [1 2] [1 2 3] [1 2 3 4]])
 
 (= (last (__ * 2 [3 4 5])) (reduce * 2 [3 4 5]) 120)
+#+END_SRC
+
 
 * 61
 ;; Write a function which takes a vector of keys and a vector of
