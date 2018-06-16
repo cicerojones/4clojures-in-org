@@ -4344,7 +4344,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 63
+* 63 function creation (~group-by~)
+#+BEGIN_SRC clojure
 ;; Given a function f and a sequence s, write a function which returns
 ;; a map. The keys should be the values of f applied to each item
 ;; in s. The value at each key should be a vector of corresponding
@@ -4358,6 +4359,8 @@ benizi's solution:
 
 (= (__ count [[1] [1 2] [3] [1 2 3] [2 3]])
    {1 [[1] [3]], 2 [[1 2] [2 3]], 3 [[1 2 3]]})
+#+END_SRC
+
 
 * 64 use 'reduce' fn
 ;; <a
