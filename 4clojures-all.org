@@ -4363,6 +4363,7 @@ benizi's solution:
 
 
 * 64 use 'reduce' fn
+#+BEGIN_SRC clojure
 ;; <a
 ;; href='http://clojuredocs.org/clojure_core/clojure.core/reduce'>Reduce</a>
 ;; takes a 2 argument function and an optional starting value. It then
@@ -4378,6 +4379,8 @@ benizi's solution:
 (=  0 (reduce __ []))
 
 (=  6 (reduce __ 1 [2 3]))
+#+END_SRC
+
 
 ** solution 
 +
