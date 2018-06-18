@@ -4385,7 +4385,8 @@ benizi's solution:
 ** solution 
 +
 
-* 65
+* 65 function creation (~seq?~, ~map?~ etc.)
+#+BEGIN_SRC clojure
 ;; Clojure has many sequence types, which act in subtly different
 ;; ways. The core functions typically convert them into a uniform
 ;; "sequence" type and work with them that way, but it can be
@@ -4408,6 +4409,8 @@ benizi's solution:
 (= :set (__ #{10 (rand-int 5)}))
 
 (= [:map :set :vector :list] (map __ [{} #{} [] ()]))
+#+END_SRC
+
 
 * 66
 ;; Given two integers, write a function which returns the greatest
