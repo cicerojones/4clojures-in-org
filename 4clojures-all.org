@@ -4412,7 +4412,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 66
+* 66 function creation (GCD)
+#+BEGIN_SRC clojure
 ;; Given two integers, write a function which returns the greatest
 ;; common divisor. Use M-x 4clojure-check-answers when you're done!
 
@@ -4423,6 +4424,8 @@ benizi's solution:
 (= (__ 5 7) 1)
 
 (= (__ 1023 858) 33)
+#+END_SRC
+
 
 * 67
 ;; Write a function which returns the first x number of prime numbers.
