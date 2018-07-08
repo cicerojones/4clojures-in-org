@@ -4427,7 +4427,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 67
+* 67 function creation (first x prime numbers)
+#+BEGIN_SRC clojure
 ;; Write a function which returns the first x number of prime numbers.
 ;; Use M-x 4clojure-check-answers when you're done!
 
@@ -4436,6 +4437,8 @@ benizi's solution:
 (= (__ 5) [2 3 5 7 11])
 
 (= (last (__ 100)) 541)
+#+END_SRC
+
 
 * 68
 ;; Clojure only has one non-stack-consuming looping construct: recur.
