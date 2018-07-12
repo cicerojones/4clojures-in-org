@@ -4458,7 +4458,8 @@ benizi's solution:
 #+END_SRC
 
 
-* 69
+* 69 function creation (~merge-with~)
+#+BEGIN_SRC clojure
 ;; Write a function which takes a function f and a variable number of
 ;; maps. Your function should return a map that consists of the rest
 ;; of the maps conj-ed onto the first. If a key occurs in more than
@@ -4475,6 +4476,8 @@ benizi's solution:
 
 (= (__ concat {:a [3], :b [6]} {:a [4 5], :c [8 9]} {:b [7]})
    {:a [3 4 5], :b [6 7], :c [8 9]})
+#+END_SRC
+
 
 * 70
 ;; Write a function that splits a sentence up into a sorted list of
